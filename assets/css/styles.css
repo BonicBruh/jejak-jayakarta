@@ -608,6 +608,7 @@ input[disabled] {
   position: sticky;
   z-index: 1000;
   top: 0;
+  background: var(--paper);
   box-shadow: 0 12px 30px rgba(23, 35, 42, 0.06);
 }
 
@@ -654,7 +655,6 @@ input[disabled] {
   gap: 2rem;
   align-items: center;
   min-height: 104px;
-  background: var(--paper);
 }
 
 .brand-link img {
@@ -907,12 +907,8 @@ input[disabled] {
 }
 
 .hero-placeholder {
-  width: 100%;
-  min-width: 0;
   min-height: 470px;
-  margin: 0;
-  align-self: stretch;
-  transform: none;
+  transform: rotate(1.5deg);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
 
@@ -1375,6 +1371,7 @@ input[disabled] {
   .brand-bar {
     grid-template-columns: minmax(200px, 280px) 1fr auto;
     gap: 1rem;
+    position: sticky;
   }
 
   .site-search {
@@ -1508,6 +1505,7 @@ input[disabled] {
   .brand-bar {
     grid-template-columns: minmax(170px, 230px) auto;
     min-height: 82px;
+    position: sticky;
   }
 
   .brand-link img {

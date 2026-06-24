@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to Jejak Jayakarta, a four-day cultural and community journey through Jakarta.">
+  <meta name="theme-color" content="#17232A">
+  <title>Sign in | Jejak Jayakarta</title>
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="auth-page">
+  <a class="skip-link" href="#auth-main">Skip to sign-in form</a>
+
+  <main id="auth-main" class="auth-shell">
+    <section class="auth-card" aria-labelledby="auth-heading">
+      <div class="auth-story-panel">
+        <a class="auth-logo-link" href="./index.html" aria-label="Jejak Jayakarta sign-in page">
+          <img src="./assets/images/jejak-jayakarta-logo.svg" alt="Jejak Jayakarta" width="400" height="96">
+        </a>
+
+        <div class="auth-story-copy">
+          <p class="eyebrow eyebrow-light">A Field Journey around JaBoDeTaBek</p>
+          <h2 id="auth-heading" class="font-size">Follow the city through art, history, service, and learning.</h2>
+          <p>
+            Edutrip Website Project for CSA-IT, Created by: Nicholas Ardi Tirta XI-5
+          </p>
+        </div>
+
+        <div class="mini-route">
+          <ol>
+            <li>
+              <span class="route-dot route-dot-red" aria-hidden="true"></span>
+              <span><strong>Destination 1</strong> - Museum MACAN</span>
+            </li>
+            <li>
+              <span class="route-dot route-dot-gold" aria-hidden="true"></span>
+              <span><strong>Destination 2</strong> - Museum Kota Tua</span>
+            </li>
+            <li>
+              <span class="route-dot route-dot-teal" aria-hidden="true"></span>
+              <span><strong>Destination 3</strong> - Tzu Chi</span>
+            </li>
+            <li>
+              <span class="route-dot route-dot-ink" aria-hidden="true"></span>
+              <span><strong>Destination 4</strong> - SAAJA</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="auth-form-panel">
+        <div id="setup-warning" class="setup-warning" hidden role="alert">
+          Supabase is not configured yet. Open <code>assets/js/config.js</code> and add your project URL and publishable key.
+        </div>
+
+        <div class="auth-tabs" role="tablist" aria-label="Account access">
+          <button id="signin-tab" class="auth-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="signin-panel" data-auth-tab="signin">
+            Sign in
+          </button>
+          <button id="signup-tab" class="auth-tab" type="button" role="tab" aria-selected="false" aria-controls="signup-panel" data-auth-tab="signup">
+            Sign up
+          </button>
+        </div>
+
+        <section id="signin-panel" class="auth-tab-panel" role="tabpanel" aria-labelledby="signin-tab">
+          <div class="form-heading">
+            <p class="eyebrow">Welcome back</p>
+            <h2>Continue your journey</h2>
+            <p>Enter the email and password connected to your Jejak Jayakarta account.</p>
+          </div>
+
+          <form id="signin-form" class="auth-form" novalidate>
+            <div class="field-group">
+              <label for="signin-email">Email address</label>
+              <input id="signin-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="field-group">
+              <label for="signin-password">Password</label>
+              <div class="password-field">
+                <input id="signin-password" name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="Enter your password">
+                <button class="password-toggle" type="button" data-password-toggle="signin-password" aria-label="Show password">Show</button>
+              </div>
+            </div>
+
+            <button class="button button-primary button-full" type="submit">
+              <span>Sign in</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </section>
+
+        <section id="signup-panel" class="auth-tab-panel" role="tabpanel" aria-labelledby="signup-tab" hidden>
+          <div class="form-heading">
+            <p class="eyebrow">Create an account</p>
+            <h2>Start your Jejak</h2>
+            <p>Your password is handled by Supabase Auth. Only your public profile information is copied into the website database.</p>
+          </div>
+
+          <form id="signup-form" class="auth-form" novalidate>
+            <div class="field-group">
+              <label for="signup-name">Display name</label>
+              <input id="signup-name" name="displayName" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Your name">
+            </div>
+
+            <div class="field-group">
+              <label for="signup-email">Email address</label>
+              <input id="signup-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="field-grid">
+              <div class="field-group">
+                <label for="signup-password">Password</label>
+                <div class="password-field">
+                  <input id="signup-password" name="password" type="password" autocomplete="new-password" required minlength="8" placeholder="Minimum 8 characters">
+                  <button class="password-toggle" type="button" data-password-toggle="signup-password" aria-label="Show password">Show</button>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="signup-confirm-password">Confirm password</label>
+                <div class="password-field">
+                  <input id="signup-confirm-password" name="confirmPassword" type="password" autocomplete="new-password" required minlength="8" placeholder="Repeat password">
+                  <button class="password-toggle" type="button" data-password-toggle="signup-confirm-password" aria-label="Show password">Show</button>
+                </div>
+              </div>
+            </div>
+
+            <label class="checkbox-field" for="signup-terms">
+              <input id="signup-terms" name="terms" type="checkbox" required>
+              <span>I agree to use this account responsibly and understand that the current website is an educational project.</span>
+            </label>
+
+            <button class="button button-primary button-full" type="submit">
+              <span>Create account</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </section>
+
+        <p id="auth-status" class="form-status" aria-live="polite"></p>
+        <p class="auth-help">Having trouble? Check that your email redirect URL is allowed in your Supabase Auth settings.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="./assets/js/config.js" defer></script>
+  <script src="./assets/js/supabase-client.js" defer></script>
+  <script src="./assets/js/auth.js" defer></script>
+</body>
+</html>

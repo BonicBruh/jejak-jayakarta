@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jejak Jayakarta: a four-day cultural, historical, environmental, and community journey through Jakarta.">
+  <meta name="theme-color" content="#17232A">
+  <title>Home | Jejak Jayakarta</title>
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="site-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div id="home-setup-warning" class="global-warning" hidden role="alert">
+    Supabase is not configured. Return to the project setup guide before publishing this site.
+  </div>
+
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="page-container utility-inner">
+        <p>Four days. Four perspectives. One Jakarta.</p>
+        <div class="account-area">
+          <span id="account-greeting">Signed in</span>
+          <button id="signout-button" class="text-button" type="button">Sign out</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar page-container">
+      <a class="brand-link" href="./home.html" aria-label="Jejak Jayakarta homepage">
+        <img src="./assets/images/jejak-jayakarta-logo.svg" alt="Jejak Jayakarta" width="360" height="96">
+      </a>
+
+      <form id="site-search-form" class="site-search" role="search">
+        <label class="visually-hidden" for="site-search-input">Search destinations and activities</label>
+        <input id="site-search-input" type="search" placeholder="Search destination, activity, or theme">
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+        <span class="visually-hidden">Toggle navigation</span>
+      </button>
+    </div>
+
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <div class="page-container nav-inner">
+        <a class="is-current" href="./home.html">Home</a>
+        <a href="#day-1">Museum MACAN</a>
+        <a href="#day-2">Museum Kota Tua</a>
+        <a href="#day-3">Tzu Chi</a>
+        <a href="#day-4">SAAJA</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section">
+      <div class="page-container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light">Jejak Jayakarta</p>
+          <h1>Experience Jakarta through the stories it preserves and the people shaping its future.</h1>
+          <p class="hero-lead">
+            A four-day educational journey connecting contemporary art, urban heritage, environmental action, and community service.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#journey">Explore the itinerary</a>
+            <a class="button button-ghost-light" href="#editorial-note">Read the editorial note</a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Journey overview">
+            <div>
+              <dt>4</dt>
+              <dd>separate days</dd>
+            </div>
+            <div>
+              <dt>17</dt>
+              <dd>activity hours</dd>
+            </div>
+            <div>
+              <dt>4</dt>
+              <dd>distinct perspectives</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero-placeholder media-placeholder media-placeholder-dark" role="img" aria-label="Placeholder for a group photo showing participants at an iconic Jakarta location">
+          <div class="placeholder-label">
+            <span>IMAGE PLACEHOLDER</span>
+            <strong>Wide group photo at an iconic Jakarta location</strong>
+            <small>Recommended crop: 1600 × 1100 px</small>
+          </div>
+          <figcaption>Replace this block with the main journey photograph.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="editorial-note" class="editorial-section section-pad">
+      <div class="page-container editorial-grid">
+        <div>
+          <p class="eyebrow">Salam Redaksi</p>
+          <h2>A journey is more meaningful when every stop changes how we see the city.</h2>
+        </div>
+        <div class="editorial-copy">
+          <p>
+            Jejak Jayakarta is not simply a list of places to visit. It is a sequence of experiences designed to move from observation to understanding, and then from understanding to contribution.
+          </p>
+          <p>
+            Museum MACAN introduces new ways of seeing. Museum Kota Tua asks us to examine the layers of Jakarta’s history. Tzu Chi turns environmental concern into practical action. SAAJA closes the journey through direct learning and service with children.
+          </p>
+          <p class="editorial-signature">— The Jejak Jayakarta editorial team</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stories-section section-pad" aria-labelledby="stories-title">
+      <div class="page-container content-with-sidebar">
+        <div>
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow">Berita Utama</p>
+              <h2 id="stories-title">Four chapters of one city</h2>
+            </div>
+            <p id="search-results-status" class="search-results-status" aria-live="polite"></p>
+          </div>
+
+          <div id="story-grid" class="story-grid">
+            <article class="story-card" data-search="museum macan contemporary art gallery creativity day 1">
+              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of a contemporary art installation at Museum MACAN">
+                <div class="placeholder-label">
+                  <span>IMAGE PLACEHOLDER</span>
+                  <strong>Contemporary art installation at Museum MACAN</strong>
+                  <small>Recommended crop: 1200 × 800 px</small>
+                </div>
+              </figure>
+              <div class="story-card-body">
+                <div class="story-meta"><span>Day 1</span><span>4 hours</span></div>
+                <h3>Learning to look again at Museum MACAN</h3>
+                <p>Begin with contemporary art, interpretation, and discussion. The first day establishes curiosity as the method for the entire journey.</p>
+                <a href="#day-1">View day one <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="story-card" data-search="museum kota tua jakarta history heritage architecture day 2">
+              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of Museum Kota Tua and its historic square">
+                <div class="placeholder-label">
+                  <span>IMAGE PLACEHOLDER</span>
+                  <strong>Museum Kota Tua and the historic square</strong>
+                  <small>Recommended crop: 1200 × 800 px</small>
+                </div>
+              </figure>
+              <div class="story-card-body">
+                <div class="story-meta"><span>Day 2</span><span>4.5 hours</span></div>
+                <h3>Reading Jakarta through Kota Tua</h3>
+                <p>Trace the city’s layered history through architecture, museum collections, public space, and the stories that official monuments may leave out.</p>
+                <a href="#day-2">View day two <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="story-card" data-search="tzu chi plastic sorting recycling environment service day 3">
+              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of volunteers sorting plastic at Tzu Chi">
+                <div class="placeholder-label">
+                  <span>IMAGE PLACEHOLDER</span>
+                  <strong>Volunteers sorting plastic at Tzu Chi</strong>
+                  <small>Recommended crop: 1200 × 800 px</small>
+                </div>
+              </figure>
+              <div class="story-card-body">
+                <div class="story-meta"><span>Day 3</span><span>3.5 hours</span></div>
+                <h3>Turning environmental concern into action</h3>
+                <p>Move from awareness to practical responsibility by learning how sorting systems, habits, and community participation affect waste outcomes.</p>
+                <a href="#day-3">View day three <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="story-card" data-search="saaja teach kids children education community service day 4">
+              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of a teaching activity with children at SAAJA">
+                <div class="placeholder-label">
+                  <span>IMAGE PLACEHOLDER</span>
+                  <strong>Teaching activity with children at SAAJA</strong>
+                  <small>Recommended crop: 1200 × 800 px</small>
+                </div>
+              </figure>
+              <div class="story-card-body">
+                <div class="story-meta"><span>Day 4</span><span>5 hours</span></div>
+                <h3>Teaching, listening, and learning at SAAJA</h3>
+                <p>Close the journey through a five-hour community session where preparation matters, but empathy and responsiveness matter more.</p>
+                <a href="#day-4">View day four <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="journey-sidebar" aria-labelledby="sidebar-title">
+          <div class="sidebar-card sidebar-card-dark">
+            <p class="eyebrow eyebrow-light">Quick guide</p>
+            <h2 id="sidebar-title">Before you leave</h2>
+            <ul class="icon-list">
+              <li><span aria-hidden="true">01</span> Wear comfortable walking shoes.</li>
+              <li><span aria-hidden="true">02</span> Bring a refillable water bottle.</li>
+              <li><span aria-hidden="true">03</span> Keep one notebook for all four days.</li>
+              <li><span aria-hidden="true">04</span> Ask before photographing people.</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <p class="eyebrow">Location placeholder</p>
+            <figure class="media-placeholder map-placeholder" role="img" aria-label="Placeholder for a Google Maps overview of all four destinations">
+              <div class="placeholder-label">
+                <span>MAP PLACEHOLDER</span>
+                <strong>Google Maps overview of all four destinations</strong>
+                <small>Recommended crop: 900 × 900 px</small>
+              </div>
+            </figure>
+          </div>
+
+          <div class="sidebar-card accent-card">
+            <p class="eyebrow">Field note prompt</p>
+            <blockquote>What changed between what you expected to learn and what the place actually taught you?</blockquote>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="journey" class="itinerary-section section-pad" aria-labelledby="itinerary-title">
+      <div class="page-container">
+        <div class="section-heading-row section-heading-light">
+          <div>
+            <p class="eyebrow eyebrow-light">Itinerary preview</p>
+            <h2 id="itinerary-title">The four-day route</h2>
+          </div>
+          <p>Each visit happens on a different day so the group has enough time to observe, participate, discuss, and reflect.</p>
+        </div>
+
+        <ol class="timeline-list">
+          <li id="day-1" class="timeline-item" data-search="museum macan day 1 4 hours contemporary art">
+            <div class="timeline-marker"><span>01</span></div>
+            <div class="timeline-time">
+              <span>4 hours</span>
+              <small>Contemporary art</small>
+            </div>
+            <div class="timeline-content">
+              <h3>Museum MACAN</h3>
+              <p>Gallery orientation, guided observation, selected exhibit exploration, group interpretation, and a short reflection.</p>
+              <div class="timeline-tags"><span>Observe</span><span>Interpret</span><span>Discuss</span></div>
+            </div>
+          </li>
+
+          <li id="day-2" class="timeline-item" data-search="museum kota tua day 2 4.5 hours heritage history">
+            <div class="timeline-marker"><span>02</span></div>
+            <div class="timeline-time">
+              <span>4.5 hours</span>
+              <small>Urban history</small>
+            </div>
+            <div class="timeline-content">
+              <h3>Museum Kota Tua</h3>
+              <p>Historic district walk, museum visit, architectural observation, source comparison, and discussion about whose stories are represented.</p>
+              <div class="timeline-tags"><span>Trace</span><span>Compare</span><span>Question</span></div>
+            </div>
+          </li>
+
+          <li id="day-3" class="timeline-item" data-search="tzu chi day 3 3.5 hours recycling plastic sorting environment">
+            <div class="timeline-marker"><span>03</span></div>
+            <div class="timeline-time">
+              <span>3.5 hours</span>
+              <small>Environmental action</small>
+            </div>
+            <div class="timeline-content">
+              <h3>Tzu Chi: Sort Plastic</h3>
+              <p>Waste-system introduction, sorting demonstration, supervised activity, discussion of contamination, and a personal habit commitment.</p>
+              <div class="timeline-tags"><span>Sort</span><span>Act</span><span>Commit</span></div>
+            </div>
+          </li>
+
+          <li id="day-4" class="timeline-item" data-search="saaja day 4 5 hours teaching children community service">
+            <div class="timeline-marker"><span>04</span></div>
+            <div class="timeline-time">
+              <span>5 hours</span>
+              <small>Community learning</small>
+            </div>
+            <div class="timeline-content">
+              <h3>SAAJA: Teach Kids</h3>
+              <p>Team briefing, learning activities, small-group facilitation, breaks, feedback, cleanup, and a final reflection on service and reciprocity.</p>
+              <div class="timeline-tags"><span>Prepare</span><span>Teach</span><span>Listen</span></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="closing-section section-pad">
+      <div class="page-container closing-grid">
+        <figure class="media-placeholder closing-placeholder" role="img" aria-label="Placeholder for a closing group reflection photograph">
+          <div class="placeholder-label">
+            <span>IMAGE PLACEHOLDER</span>
+            <strong>Closing group reflection after the fourth day</strong>
+            <small>Recommended crop: 1400 × 900 px</small>
+          </div>
+        </figure>
+        <div>
+          <p class="eyebrow">After the route</p>
+          <h2>The final destination is a more responsible way of seeing the city.</h2>
+          <p>Use this homepage as the overview. The next development stage can add one detailed page for each destination, individual notes, bookings, maps, galleries, and reviews.</p>
+          <a class="button button-primary" href="#journey">Review the itinerary</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-container footer-grid">
+      <div>
+        <img src="./assets/images/jejak-jayakarta-logo.svg" alt="Jejak Jayakarta" width="300" height="80">
+        <p>A student-built cultural and community journey through Jakarta.</p>
+      </div>
+      <div>
+        <h2>Journey</h2>
+        <ul>
+          <li><a href="#day-1">Museum MACAN</a></li>
+          <li><a href="#day-2">Museum Kota Tua</a></li>
+          <li><a href="#day-3">Tzu Chi</a></li>
+          <li><a href="#day-4">SAAJA</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="#editorial-note">About the journey</a></li>
+          <li><a href="#journey">Schedule</a></li>
+          <li><a href="mailto:hello@example.com">Contact placeholder</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-container footer-bottom">
+      <p>© <span id="current-year"></span> Jejak Jayakarta. Educational project.</p>
+      <p>Built with semantic HTML, CSS, JavaScript, Supabase, and GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="./assets/js/config.js" defer></script>
+  <script src="./assets/js/supabase-client.js" defer></script>
+  <script src="./assets/js/home.js" defer></script>
+</body>
+</html>

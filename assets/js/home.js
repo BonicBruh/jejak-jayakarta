@@ -19,37 +19,65 @@
     return new URL("./index.html", window.location.href).href;
   }
 
-  async function requireSession() {
-    if (!client) {
-      setupWarning.hidden = false;
-      window.setTimeout(() => window.location.replace(authPageUrl()), 1200);
-      return;
-    }
-
-    const { data, error } = await client.auth.getSession();
-    const session = data?.session;
-
-    if (error || !session) {
-      window.location.replace(authPageUrl());
-      return;
-    }
-
+  async function showAuthenticatedUser(session) {
     const user = session.user;
-    let displayName = user.user_metadata?.display_name || user.email?.split("@")[0] || "traveler";
+
+    let displayName =
+      user.user_metadata?.display_name ||
+      user.email?.split("@")[0] ||
+      "traveler";
 
     try {
-      const { data: profile } = await client
+      const { data: profile, error } = await client
         .from("profiles")
         .select("display_name")
         .eq("id", user.id)
         .maybeSingle();
 
-      if (profile?.display_name) displayName = profile.display_name;
-    } catch {
-      // The authentication session is still valid even if profile loading fails.
+      if (error) {
+        console.error("Profile loading failed:", error);
+      }
+
+      if (profile?.display_name) {
+        displayName = profile.display_name;
+      }
+    } catch (error) {
+      console.error("Profile loading failed:", error);
     }
 
     greeting.textContent = `Hello, ${displayName}`;
+  }
+
+  function requireSession() {
+    if (!client) {
+      setupWarning.hidden = false;
+      return;
+    }
+
+    let subscription = null;
+    let handled = false;
+
+    const finishAuthentication = (session) => {
+      if (handled) return;
+      handled = true;
+
+      subscription?.unsubscribe();
+
+      if (!session) {
+        window.location.replace(authPageUrl());
+        return;
+      }
+
+      showAuthenticatedUser(session);
+    };
+
+    const { data } = client.auth.onAuthStateChange((event, session) => {
+      if (event === "INITIAL_SESSION" || event === "SIGNED_IN") {
+        finishAuthentication(session);
+      }
+    });
+
+    subscription = data.subscription;
   }
 
   signOutButton.addEventListener("click", async () => {

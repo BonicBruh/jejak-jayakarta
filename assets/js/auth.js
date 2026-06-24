@@ -76,12 +76,24 @@
     });
   });
 
-  async function redirectIfSignedIn() {
+  function redirectIfSignedIn() {
     if (!client) return;
-    const { data, error } = await client.auth.getSession();
-    if (!error && data.session) {
-      window.location.replace(new URL("./home.html", window.location.href).href);
-    }
+
+    let subscription = null;
+
+    const { data } = client.auth.onAuthStateChange((event, session) => {
+      if (event !== "INITIAL_SESSION") return;
+
+      subscription?.unsubscribe();
+
+      if (session) {
+        window.location.replace(
+          new URL("./home.html", window.location.href).href
+        );
+      }
+    });
+
+    subscription = data.subscription;
   }
 
   signInForm.addEventListener("submit", async (event) => {

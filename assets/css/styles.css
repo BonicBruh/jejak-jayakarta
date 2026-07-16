@@ -4166,3 +4166,200 @@ body {
     min-height: 260px;
   }
 }
+
+/* =========================================================
+   Indonesia Victory Palette + direct photo galleries
+   ========================================================= */
+:root {
+  --brick: #d7192d;
+  --brick-dark: #98111f;
+  --ivory: #fff3e5;
+  --paper: #fffdf8;
+  --teal: #183b56;
+  --teal-dark: #0a2235;
+  --gold: #f2b21b;
+  --gold-soft: #ffe3a1;
+  --ink: #211b19;
+  --ink-soft: #665b55;
+  --line: rgba(107, 52, 42, 0.17);
+  --mist: #f5e8e3;
+  --danger: #b81425;
+  --success: #176b52;
+  --shadow-sm: 0 14px 38px rgba(83, 27, 25, 0.10);
+  --shadow-lg: 0 34px 90px rgba(66, 24, 24, 0.23);
+}
+
+body {
+  background:
+    radial-gradient(circle at 6% 4%, rgba(215, 25, 45, 0.13), transparent 28rem),
+    radial-gradient(circle at 94% 17%, rgba(242, 178, 27, 0.15), transparent 26rem),
+    linear-gradient(180deg, #fffdf8 0%, #fff4e8 48%, #fffdf8 100%);
+}
+
+.design-refresh .utility-bar {
+  background: linear-gradient(90deg, var(--teal-dark), #142f44 56%, var(--brick-dark));
+}
+
+.design-refresh .hero-section,
+.detail-page-hero {
+  background:
+    radial-gradient(circle at 14% 14%, rgba(255, 227, 161, 0.30), transparent 23rem),
+    radial-gradient(circle at 82% 18%, rgba(215, 25, 45, 0.34), transparent 28rem),
+    linear-gradient(128deg, var(--teal-dark) 0%, #183b56 48%, var(--brick-dark) 100%);
+}
+
+.design-refresh .hero-floating-note {
+  background: linear-gradient(135deg, rgba(215, 25, 45, 0.92), rgba(152, 17, 31, 0.90));
+  border-color: rgba(255, 227, 161, 0.42);
+}
+
+.design-refresh .site-search button,
+.button-primary,
+.page-anchor-list a:hover,
+.page-mini-nav a:hover {
+  background: linear-gradient(135deg, var(--brick), var(--brick-dark));
+}
+
+.eyebrow,
+.split-page-card span {
+  color: var(--brick);
+}
+
+.program-detail-section,
+.program-hub-section {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(242, 178, 27, 0.12), transparent 24rem),
+    linear-gradient(180deg, var(--paper), var(--ivory));
+}
+
+.simplified-program-card {
+  display: block;
+  overflow: hidden;
+  padding: clamp(1.25rem, 3.4vw, 2.8rem);
+  border-color: rgba(152, 17, 31, 0.16);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.simplified-program-card::after {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 8px;
+  background: linear-gradient(90deg, var(--brick), var(--gold), var(--brick-dark));
+  content: "";
+}
+
+.simplified-program-copy {
+  max-width: 900px;
+  margin-inline: auto;
+  padding-top: 0.6rem;
+  text-align: left;
+}
+
+.simplified-program-copy h2 {
+  max-width: none;
+  margin-bottom: 0.45rem;
+}
+
+.detail-subtitle {
+  margin-bottom: 1rem;
+  color: var(--brick-dark);
+  font-size: clamp(0.86rem, 1.4vw, 1rem);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.simplified-program-copy .detail-overview {
+  max-width: 78ch;
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.35vw, 1.14rem);
+  line-height: 1.78;
+}
+
+.program-detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.9rem, 2vw, 1.4rem);
+  align-items: start;
+  margin-top: clamp(1.5rem, 4vw, 2.8rem);
+}
+
+.program-gallery-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(107, 52, 42, 0.14);
+  border-radius: 22px;
+  background: transparent;
+  box-shadow: var(--shadow-sm);
+}
+
+.program-gallery-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
+  background: transparent;
+}
+
+.program-gallery-video {
+  background: #0a0a0a;
+}
+
+/* Keep banner-like containers matched to each image's natural proportions. */
+.detail-hero-cover,
+.detail-main-media,
+.editorial-detail-list .long-form-media-story .detail-main-media {
+  min-height: 0;
+  height: auto;
+  background: transparent;
+}
+
+.detail-hero-cover img,
+.detail-main-media img,
+.detail-main-media.photo-frame img,
+.editorial-detail-list .long-form-media-story .detail-main-media img,
+.editorial-detail-list .long-form-media-story .detail-main-media video {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.source-doc-card img,
+.achievement-certificate img,
+.split-page-card img {
+  object-position: center center;
+}
+
+.design-refresh .category-card::before {
+  background: linear-gradient(90deg, var(--brick), var(--gold));
+}
+
+.design-refresh .category-card:nth-child(2)::before {
+  background: linear-gradient(90deg, var(--brick-dark), var(--gold));
+}
+
+.design-refresh .category-card:nth-child(3)::before {
+  background: linear-gradient(90deg, var(--teal), var(--brick));
+}
+
+.design-refresh .category-card:nth-child(4)::before {
+  background: linear-gradient(90deg, var(--gold), var(--brick-dark));
+}
+
+@media (max-width: 760px) {
+  .program-detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .simplified-program-card {
+    padding: 1.1rem;
+  }
+}

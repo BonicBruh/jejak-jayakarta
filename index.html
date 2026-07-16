@@ -1,153 +1,128 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sign in to Jejak Jayakarta, a four-day cultural and community journey through Jakarta.">
-  <meta name="theme-color" content="#17232A">
-  <title>Sign in | Jejak Jayakarta</title>
-  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Masuk ke Jejak Nusantara: Final OSN, OSN AI, Pelatnas IOI dan IOAI, Edutrip, serta pendukung perjalanan." name="description"/>
+<meta content="#17232A" name="theme-color"/>
+<title>Masuk | Jejak Nusantara</title>
+<link href="./assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="./assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body class="auth-page">
-  <a class="skip-link" href="#auth-main">Skip to sign-in form</a>
-
-  <main id="auth-main" class="auth-shell">
-    <section class="auth-card" aria-labelledby="auth-heading">
-      <div class="auth-story-panel">
-        <a class="auth-logo-link" href="./index.html" aria-label="Jejak Jayakarta sign-in page">
-          <img src="./assets/images/jejak-jayakarta-logo.svg" alt="Jejak Jayakarta" width="400" height="96">
-        </a>
-
-        <div class="auth-story-copy">
-          <p class="eyebrow eyebrow-light">A Field Journey around JaBoDeTaBek</p>
-          <h2 id="auth-heading" class="font-size">Follow the city through art, history, service, and learning.</h2>
-          <p>
-            Edutrip Website Project for CSA-IT, Created by: Nicholas Ardi Tirta XI-5
-          </p>
-        </div>
-
-        <div class="mini-route">
-          <ol>
-            <li>
-              <span class="route-dot route-dot-red" aria-hidden="true"></span>
-              <span><strong>Destination 1</strong> - Museum MACAN</span>
-            </li>
-            <li>
-              <span class="route-dot route-dot-gold" aria-hidden="true"></span>
-              <span><strong>Destination 2</strong> - Museum Kota Tua</span>
-            </li>
-            <li>
-              <span class="route-dot route-dot-teal" aria-hidden="true"></span>
-              <span><strong>Destination 3</strong> - Tzu Chi</span>
-            </li>
-            <li>
-              <span class="route-dot route-dot-ink" aria-hidden="true"></span>
-              <span><strong>Destination 4</strong> - SAAJA</span>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="auth-form-panel">
-        <div id="setup-warning" class="setup-warning" hidden role="alert">
-          Supabase is not configured yet. Open <code>assets/js/config.js</code> and add your project URL and publishable key.
-        </div>
-
-        <div class="auth-tabs" role="tablist" aria-label="Account access">
-          <button id="signin-tab" class="auth-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="signin-panel" data-auth-tab="signin">
-            Sign in
+<a class="skip-link" href="#auth-main">Lewati ke form masuk</a>
+<main class="auth-shell" id="auth-main">
+<section aria-labelledby="auth-heading" class="auth-card">
+<div class="auth-story-panel">
+<a aria-label="Jejak Nusantara sign-in page" class="auth-logo-link" href="./index.html">
+<img alt="Jejak Nusantara" height="96" src="./assets/images/jejak-nusantara-logo.svg" width="400"/>
+</a>
+<div class="auth-story-copy">
+<p class="eyebrow eyebrow-light">OSN · Pelatnas · Edutrip</p>
+<h2 class="font-size" id="auth-heading">Ikuti perjalanan dari Final OSN dan OSN AI, lanjut Pelatnas IOI dan IOAI, sampai Edutrip.</h2>
+<p>Educational Website Project for CSA-IT, dibuat oleh Nicholas Ardi Tirta XI-5 dan Leonel Chailand 11.4. Website ini sekarang merangkum Final OSN di Malang, tambahan cerita OSN AI, Pelatnas IOI milik Leonel, Pelatnas IOAI milik Nicholas, Edutrip, serta detail pendukung seperti transportasi, makanan, dokumen, foto, dan video supaya ceritanya terasa lebih lengkap.</p>
+</div>
+<div class="mini-route">
+<ol>
+<li>
+<span aria-hidden="true" class="route-dot route-dot-red"></span>
+<span><strong>OSN</strong> - Final OSN di Malang: UMM, Brawijaya, Jatim Park 2, San Terra, Coban Rondo, plus tambahan cerita OSN AI</span>
+</li>
+<li>
+<span aria-hidden="true" class="route-dot route-dot-teal"></span>
+<span><strong>Pelatnas</strong> - Jalur IOI: UI, IPB, Kebun Raya Bogor; jalur IOAI: tahap 1 dan tahap 2 sama-sama di UI</span>
+</li>
+<li>
+<span aria-hidden="true" class="route-dot route-dot-gold"></span>
+<span><strong>Edutrip</strong> - Museum MACAN, Museum Kota Tua, Tzu Chi, SAAJA</span>
+</li>
+<li>
+<span aria-hidden="true" class="route-dot route-dot-red"></span>
+<span><strong>Pendukung Perjalanan</strong> - Transportasi, hotel, makanan, dan dokumentasi ID card</span>
+</li>
+</ol>
+</div>
+</div>
+<div class="auth-form-panel">
+<div aria-label="Akses akun" class="auth-tabs" role="tablist">
+<button aria-controls="signin-panel" aria-selected="true" class="auth-tab is-active" data-auth-tab="signin" id="signin-tab" role="tab" type="button">
+            Masuk
           </button>
-          <button id="signup-tab" class="auth-tab" type="button" role="tab" aria-selected="false" aria-controls="signup-panel" data-auth-tab="signup">
-            Sign up
+<button aria-controls="signup-panel" aria-selected="false" class="auth-tab" data-auth-tab="signup" id="signup-tab" role="tab" type="button">
+            Daftar
           </button>
-        </div>
-
-        <section id="signin-panel" class="auth-tab-panel" role="tabpanel" aria-labelledby="signin-tab">
-          <div class="form-heading">
-            <p class="eyebrow">Welcome back</p>
-            <h2>Continue your journey</h2>
-            <p>Enter the email and password connected to your Jejak Jayakarta account.</p>
-          </div>
-
-          <form id="signin-form" class="auth-form" novalidate>
-            <div class="field-group">
-              <label for="signin-email">Email address</label>
-              <input id="signin-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
-            </div>
-
-            <div class="field-group">
-              <label for="signin-password">Password</label>
-              <div class="password-field">
-                <input id="signin-password" name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="Enter your password">
-                <button class="password-toggle" type="button" data-password-toggle="signin-password" aria-label="Show password">Show</button>
-              </div>
-            </div>
-
-            <button class="button button-primary button-full" type="submit">
-              <span>Sign in</span>
-              <span aria-hidden="true">→</span>
-            </button>
-          </form>
-        </section>
-
-        <section id="signup-panel" class="auth-tab-panel" role="tabpanel" aria-labelledby="signup-tab" hidden>
-          <div class="form-heading">
-            <p class="eyebrow">Create an account</p>
-            <h2>Start your Jejak</h2>
-            <p>Your password is handled by Supabase Auth. Only your public profile information is copied into the website database.</p>
-          </div>
-
-          <form id="signup-form" class="auth-form" novalidate>
-            <div class="field-group">
-              <label for="signup-name">Display name</label>
-              <input id="signup-name" name="displayName" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Your name">
-            </div>
-
-            <div class="field-group">
-              <label for="signup-email">Email address</label>
-              <input id="signup-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
-            </div>
-
-            <div class="field-grid">
-              <div class="field-group">
-                <label for="signup-password">Password</label>
-                <div class="password-field">
-                  <input id="signup-password" name="password" type="password" autocomplete="new-password" required minlength="8" placeholder="Minimum 8 characters">
-                  <button class="password-toggle" type="button" data-password-toggle="signup-password" aria-label="Show password">Show</button>
-                </div>
-              </div>
-
-              <div class="field-group">
-                <label for="signup-confirm-password">Confirm password</label>
-                <div class="password-field">
-                  <input id="signup-confirm-password" name="confirmPassword" type="password" autocomplete="new-password" required minlength="8" placeholder="Repeat password">
-                  <button class="password-toggle" type="button" data-password-toggle="signup-confirm-password" aria-label="Show password">Show</button>
-                </div>
-              </div>
-            </div>
-
-            <label class="checkbox-field" for="signup-terms">
-              <input id="signup-terms" name="terms" type="checkbox" required>
-              <span>I agree to use this account responsibly and understand that the current website is an educational project.</span>
-            </label>
-
-            <button class="button button-primary button-full" type="submit">
-              <span>Create account</span>
-              <span aria-hidden="true">→</span>
-            </button>
-          </form>
-        </section>
-
-        <p id="auth-status" class="form-status" aria-live="polite"></p>
-        <p class="auth-help">Having trouble? Check that your email redirect URL is allowed in your Supabase Auth settings.</p>
-      </div>
-    </section>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-  <script src="./assets/js/config.js" defer></script>
-  <script src="./assets/js/supabase-client.js" defer></script>
-  <script src="./assets/js/auth.js" defer></script>
+</div>
+<section aria-labelledby="signin-tab" class="auth-tab-panel" id="signin-panel" role="tabpanel">
+<div class="form-heading">
+<p class="eyebrow">Selamat datang kembali</p>
+<h2>Lanjutkan perjalananmu</h2>
+<p>Masukkan email dan password yang tersimpan di browser ini.</p>
+</div>
+<form class="auth-form" id="signin-form" novalidate="">
+<div class="field-group">
+<label for="signin-email">Alamat email</label>
+<input autocomplete="email" id="signin-email" inputmode="email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="field-group">
+<label for="signin-password">Password</label>
+<div class="password-field">
+<input autocomplete="current-password" id="signin-password" minlength="8" name="password" placeholder="Masukkan password" required="" type="password"/>
+<button aria-label="Lihat password" class="password-toggle" data-password-toggle="signin-password" type="button">Lihat</button>
+</div>
+</div>
+<button class="button button-primary button-full" type="submit">
+<span>Masuk</span>
+<span aria-hidden="true">→</span>
+</button>
+</form>
+</section>
+<section aria-labelledby="signup-tab" class="auth-tab-panel" hidden="" id="signup-panel" role="tabpanel">
+<div class="form-heading">
+<p class="eyebrow">Buat akun</p>
+<h2>Mulai Jejak-mu</h2>
+<p>Akun pembaca akan diproses melalui Supabase Auth seperti versi awal website, sehingga login dapat dipakai lintas perangkat selama akun sudah terdaftar.</p>
+</div>
+<form class="auth-form" id="signup-form" novalidate="">
+<div class="field-group">
+<label for="signup-name">Nama tampilan</label>
+<input autocomplete="name" id="signup-name" maxlength="80" minlength="2" name="displayName" placeholder="Nama pembaca" required="" type="text"/>
+</div>
+<div class="field-group">
+<label for="signup-email">Alamat email</label>
+<input autocomplete="email" id="signup-email" inputmode="email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="field-grid">
+<div class="field-group">
+<label for="signup-password">Password</label>
+<div class="password-field">
+<input autocomplete="new-password" id="signup-password" minlength="8" name="password" placeholder="Minimal 8 karakter" required="" type="password"/>
+<button aria-label="Lihat password" class="password-toggle" data-password-toggle="signup-password" type="button">Lihat</button>
+</div>
+</div>
+<div class="field-group">
+<label for="signup-confirm-password">Konfirmasi password</label>
+<div class="password-field">
+<input autocomplete="new-password" id="signup-confirm-password" minlength="8" name="confirmPassword" placeholder="Ulangi password" required="" type="password"/>
+<button aria-label="Lihat password" class="password-toggle" data-password-toggle="signup-confirm-password" type="button">Lihat</button>
+</div>
+</div>
+</div>
+<label class="checkbox-field" for="signup-terms">
+<input id="signup-terms" name="terms" required="" type="checkbox"/>
+<span>Saya setuju menggunakan akun ini dengan bertanggung jawab dan memahami bahwa website ini adalah proyek edukasi.</span>
+</label>
+<button class="button button-primary button-full" type="submit">
+<span>Buat akun</span>
+<span aria-hidden="true">→</span>
+</button>
+</form>
+</section>
+<p aria-live="polite" class="form-status" id="auth-status"></p>
+<p class="auth-help">Mode server: login dan pendaftaran menggunakan Supabase Auth. Pastikan koneksi internet aktif dan Redirect URL sudah sesuai di Supabase.</p>
+</div>
+</section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="./assets/js/config.js"></script><script src="./assets/js/supabase-client.js"></script><script defer="" src="./assets/js/auth.js"></script>
 </body>
 </html>

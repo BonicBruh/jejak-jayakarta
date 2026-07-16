@@ -1,9 +1,7 @@
 /*
-  Replace both placeholder values with the values from:
-  Supabase Dashboard -> Project Settings -> API Keys / Connect.
-
-  Use the Project URL and the publishable key (sb_publishable_...).
-  Never place a secret key or service_role key in this file.
+  Supabase client-side configuration.
+  Use only the public Project URL and publishable key here.
+  Never put a service_role key in a frontend project.
 */
 window.SUPABASE_CONFIG = {
   url: "https://jdxekarfojpordfmjtht.supabase.co",

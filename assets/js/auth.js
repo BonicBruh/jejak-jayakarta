@@ -2,7 +2,6 @@
   "use strict";
 
   const client = window.jejakSupabase;
-  const setupWarning = document.querySelector("#setup-warning");
   const status = document.querySelector("#auth-status");
   const signInForm = document.querySelector("#signin-form");
   const signUpForm = document.querySelector("#signup-form");
@@ -13,22 +12,22 @@
   };
 
   function setStatus(message = "", type = "") {
+    if (!status) return;
     status.textContent = message;
     status.classList.remove("is-error", "is-success");
     if (type) status.classList.add(`is-${type}`);
   }
 
   function setFormBusy(form, busy) {
+    if (!form) return;
     const controls = [...form.querySelectorAll("input, button")];
-    controls.forEach((control) => {
-      control.disabled = busy;
-    });
+    controls.forEach((control) => { control.disabled = busy; });
 
     const submit = form.querySelector('button[type="submit"]');
     if (submit) {
-      submit.dataset.originalText ||= submit.querySelector("span")?.textContent || "Submit";
+      submit.dataset.originalText ||= submit.querySelector("span")?.textContent || "Kirim";
       const label = submit.querySelector("span");
-      if (label) label.textContent = busy ? "Please wait…" : submit.dataset.originalText;
+      if (label) label.textContent = busy ? "Sebentar…" : submit.dataset.originalText;
     }
   }
 
@@ -43,7 +42,7 @@
     });
 
     Object.entries(panels).forEach(([name, panel]) => {
-      panel.hidden = name !== safeTab;
+      if (panel) panel.hidden = name !== safeTab;
     });
 
     setStatus();
@@ -54,6 +53,16 @@
 
     const firstInput = panels[safeTab]?.querySelector("input");
     window.setTimeout(() => firstInput?.focus(), 0);
+  }
+
+  function homeUrl() {
+    return new URL("./home.html", window.location.href).href;
+  }
+
+  async function redirectIfSignedIn() {
+    if (!client) return;
+    const { data } = await client.auth.getSession();
+    if (data?.session) window.location.replace(homeUrl());
   }
 
   tabButtons.forEach((button) => {
@@ -71,37 +80,17 @@
       if (!input) return;
       const shouldShow = input.type === "password";
       input.type = shouldShow ? "text" : "password";
-      button.textContent = shouldShow ? "Hide" : "Show";
-      button.setAttribute("aria-label", shouldShow ? "Hide password" : "Show password");
+      button.textContent = shouldShow ? "Sembunyikan" : "Lihat";
+      button.setAttribute("aria-label", shouldShow ? "Sembunyikan password" : "Lihat password");
     });
   });
 
-  function redirectIfSignedIn() {
-    if (!client) return;
-
-    let subscription = null;
-
-    const { data } = client.auth.onAuthStateChange((event, session) => {
-      if (event !== "INITIAL_SESSION") return;
-
-      subscription?.unsubscribe();
-
-      if (session) {
-        window.location.replace(
-          new URL("./home.html", window.location.href).href
-        );
-      }
-    });
-
-    subscription = data.subscription;
-  }
-
-  signInForm.addEventListener("submit", async (event) => {
+  signInForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
     setStatus();
 
     if (!client) {
-      setStatus("Supabase is not configured yet. Complete the setup before signing in.", "error");
+      setStatus("Koneksi ke Supabase belum siap. Periksa config.js, koneksi internet, dan pengaturan Supabase.", "error");
       return;
     }
 
@@ -117,21 +106,21 @@
       const { error } = await client.auth.signInWithPassword({ email, password });
       if (error) throw error;
 
-      setStatus("Signed in successfully. Opening your journey…", "success");
-      window.location.replace(new URL("./home.html", window.location.href).href);
+      setStatus("Berhasil masuk. Membuka jurnal perjalanan…", "success");
+      window.location.replace(homeUrl());
     } catch (error) {
-      setStatus(error?.message || "Sign in failed. Check your details and try again.", "error");
+      setStatus(error?.message || "Gagal masuk. Periksa email dan password, lalu coba lagi.", "error");
     } finally {
       setFormBusy(signInForm, false);
     }
   });
 
-  signUpForm.addEventListener("submit", async (event) => {
+  signUpForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
     setStatus();
 
     if (!client) {
-      setStatus("Supabase is not configured yet. Complete the setup before creating an account.", "error");
+      setStatus("Koneksi ke Supabase belum siap. Periksa config.js, koneksi internet, dan pengaturan Supabase.", "error");
       return;
     }
 
@@ -145,55 +134,49 @@
     const acceptedTerms = formData.get("terms") === "on";
 
     if (displayName.length < 2) {
-      setStatus("Please enter a display name with at least two characters.", "error");
+      setStatus("Masukkan nama tampilan minimal dua karakter.", "error");
       return;
     }
 
     if (password !== confirmPassword) {
-      setStatus("The password and confirmation do not match.", "error");
+      setStatus("Password dan konfirmasi password tidak sama.", "error");
       return;
     }
 
     if (!acceptedTerms) {
-      setStatus("You need to accept the project terms before creating an account.", "error");
+      setStatus("Pembaca perlu menyetujui ketentuan proyek sebelum membuat akun.", "error");
       return;
     }
 
     setFormBusy(signUpForm, true);
 
     try {
-      const emailRedirectTo = new URL("./home.html", window.location.href).href;
+      const emailRedirectTo = homeUrl();
       const { data, error } = await client.auth.signUp({
         email,
         password,
         options: {
           emailRedirectTo,
-          data: {
-            display_name: displayName
-          }
+          data: { display_name: displayName }
         }
       });
 
       if (error) throw error;
 
       if (data.session) {
-        setStatus("Account created. Opening your journey…", "success");
+        setStatus("Akun berhasil dibuat. Membuka jurnal perjalanan…", "success");
         window.location.replace(emailRedirectTo);
         return;
       }
 
       signUpForm.reset();
-      setStatus("Account created. Check your email and confirm the address before signing in.", "success");
+      setStatus("Akun berhasil dibuat. Jika konfirmasi email aktif, buka email untuk mengaktifkan akun sebelum masuk.", "success");
     } catch (error) {
-      setStatus(error?.message || "Account creation failed. Please try again.", "error");
+      setStatus(error?.message || "Pembuatan akun gagal. Silakan coba lagi.", "error");
     } finally {
       setFormBusy(signUpForm, false);
     }
   });
-
-  if (!window.JEJAK_SUPABASE_READY) {
-    setupWarning.hidden = false;
-  }
 
   const initialTab = window.location.hash.toLowerCase() === "#signup" ? "signup" : "signin";
   switchTab(initialTab, false);

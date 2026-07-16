@@ -1,346 +1,325 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jejak Jayakarta: a four-day cultural, historical, environmental, and community journey through Jakarta.">
-  <meta name="theme-color" content="#17232A">
-  <title>Home | Jejak Jayakarta</title>
-  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Jejak Nusantara: jurnal Final OSN di Malang, OSN AI, Pelatnas IOI dan IOAI di UI/IPB, Edutrip, serta pendukung perjalanan." name="description"/>
+<meta content="#17232A" name="theme-color"/>
+<title>Beranda | Jejak Nusantara</title>
+<link href="./assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="./assets/css/styles.css" rel="stylesheet"/>
 </head>
-<body class="site-page">
-  <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <div id="home-setup-warning" class="global-warning" hidden role="alert">
-    Supabase is not configured. Return to the project setup guide before publishing this site.
-  </div>
-
-  <header class="site-header">
-    <div class="utility-bar">
-      <div class="page-container utility-inner">
-        <p>Four days. Four perspectives. One Jakarta.</p>
-        <div class="account-area">
-          <span id="account-greeting">Signed in</span>
-          <button id="signout-button" class="text-button" type="button">Sign out</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="brand-bar page-container">
-      <a class="brand-link" href="./home.html" aria-label="Jejak Jayakarta homepage">
-        <img src="./assets/images/jejak-jayakarta-logo.svg" alt="Jejak Jayakarta" width="360" height="96">
-      </a>
-
-      <form id="site-search-form" class="site-search" role="search">
-        <label class="visually-hidden" for="site-search-input">Search destinations and activities</label>
-        <input id="site-search-input" type="search" placeholder="Search destination, activity, or theme">
-        <button type="submit" aria-label="Search">Search</button>
-      </form>
-
-      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span></span><span></span><span></span>
-        <span class="visually-hidden">Toggle navigation</span>
-      </button>
-    </div>
-
-    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
-      <div class="page-container nav-inner">
-        <a class="is-current" href="./home.html">Home</a>
-        <a href="#day-1">Museum MACAN</a>
-        <a href="#day-2">Museum Kota Tua</a>
-        <a href="#day-3">Tzu Chi</a>
-        <a href="#day-4">SAAJA</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <section class="hero-section">
-      <div class="page-container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow eyebrow-light">Jejak Jayakarta</p>
-          <h1>Experience Jakarta through the stories it preserves and the people shaping its future.</h1>
-          <p class="hero-lead">
-            A four-day educational journey connecting contemporary art, urban heritage, environmental action, and community service.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-light" href="#journey">Explore the itinerary</a>
-            <a class="button button-ghost-light" href="#editorial-note">Read the editorial note</a>
-          </div>
-
-          <dl class="hero-stats" aria-label="Journey overview">
-            <div>
-              <dt>4</dt>
-              <dd>separate days</dd>
-            </div>
-            <div>
-              <dt>17</dt>
-              <dd>activity hours</dd>
-            </div>
-            <div>
-              <dt>4</dt>
-              <dd>distinct perspectives</dd>
-            </div>
-          </dl>
-        </div>
-
-        <figure class="hero-placeholder media-placeholder media-placeholder-dark" role="img" aria-label="Placeholder for a group photo showing participants at an iconic Jakarta location">
-          <div class="placeholder-label">
-            <span>IMAGE PLACEHOLDER</span>
-            <strong>Wide group photo at an iconic Jakarta location</strong>
-            <small>Recommended crop: 1600 × 1100 px</small>
-          </div>
-          <figcaption>Replace this block with the main journey photograph.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="editorial-note" class="editorial-section section-pad">
-      <div class="page-container editorial-grid">
-        <div>
-          <p class="eyebrow">Salam Redaksi</p>
-          <h2>A journey is more meaningful when every stop changes how we see the city.</h2>
-        </div>
-        <div class="editorial-copy">
-          <p>
-            Jejak Jayakarta is not simply a list of places to visit. It is a sequence of experiences designed to move from observation to understanding, and then from understanding to contribution.
-          </p>
-          <p>
-            Museum MACAN introduces new ways of seeing. Museum Kota Tua asks us to examine the layers of Jakarta’s history. Tzu Chi turns environmental concern into practical action. SAAJA closes the journey through direct learning and service with children.
-          </p>
-          <p class="editorial-signature">— The Jejak Jayakarta editorial team</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="stories-section section-pad" aria-labelledby="stories-title">
-      <div class="page-container content-with-sidebar">
-        <div>
-          <div class="section-heading-row">
-            <div>
-              <p class="eyebrow">Berita Utama</p>
-              <h2 id="stories-title">Four chapters of one city</h2>
-            </div>
-            <p id="search-results-status" class="search-results-status" aria-live="polite"></p>
-          </div>
-
-          <div id="story-grid" class="story-grid">
-            <article class="story-card" data-search="museum macan contemporary art gallery creativity day 1">
-              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of a contemporary art installation at Museum MACAN">
-                <div class="placeholder-label">
-                  <span>IMAGE PLACEHOLDER</span>
-                  <strong>Contemporary art installation at Museum MACAN</strong>
-                  <small>Recommended crop: 1200 × 800 px</small>
-                </div>
-              </figure>
-              <div class="story-card-body">
-                <div class="story-meta"><span>Day 1</span><span>4 hours</span></div>
-                <h3>Learning to look again at Museum MACAN</h3>
-                <p>Begin with contemporary art, interpretation, and discussion. The first day establishes curiosity as the method for the entire journey.</p>
-                <a href="#day-1">View day one <span aria-hidden="true">→</span></a>
-              </div>
-            </article>
-
-            <article class="story-card" data-search="museum kota tua jakarta history heritage architecture day 2">
-              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of Museum Kota Tua and its historic square">
-                <div class="placeholder-label">
-                  <span>IMAGE PLACEHOLDER</span>
-                  <strong>Museum Kota Tua and the historic square</strong>
-                  <small>Recommended crop: 1200 × 800 px</small>
-                </div>
-              </figure>
-              <div class="story-card-body">
-                <div class="story-meta"><span>Day 2</span><span>4.5 hours</span></div>
-                <h3>Reading Jakarta through Kota Tua</h3>
-                <p>Trace the city’s layered history through architecture, museum collections, public space, and the stories that official monuments may leave out.</p>
-                <a href="#day-2">View day two <span aria-hidden="true">→</span></a>
-              </div>
-            </article>
-
-            <article class="story-card" data-search="tzu chi plastic sorting recycling environment service day 3">
-              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of volunteers sorting plastic at Tzu Chi">
-                <div class="placeholder-label">
-                  <span>IMAGE PLACEHOLDER</span>
-                  <strong>Volunteers sorting plastic at Tzu Chi</strong>
-                  <small>Recommended crop: 1200 × 800 px</small>
-                </div>
-              </figure>
-              <div class="story-card-body">
-                <div class="story-meta"><span>Day 3</span><span>3.5 hours</span></div>
-                <h3>Turning environmental concern into action</h3>
-                <p>Move from awareness to practical responsibility by learning how sorting systems, habits, and community participation affect waste outcomes.</p>
-                <a href="#day-3">View day three <span aria-hidden="true">→</span></a>
-              </div>
-            </article>
-
-            <article class="story-card" data-search="saaja teach kids children education community service day 4">
-              <figure class="media-placeholder story-media" role="img" aria-label="Placeholder for a photograph of a teaching activity with children at SAAJA">
-                <div class="placeholder-label">
-                  <span>IMAGE PLACEHOLDER</span>
-                  <strong>Teaching activity with children at SAAJA</strong>
-                  <small>Recommended crop: 1200 × 800 px</small>
-                </div>
-              </figure>
-              <div class="story-card-body">
-                <div class="story-meta"><span>Day 4</span><span>5 hours</span></div>
-                <h3>Teaching, listening, and learning at SAAJA</h3>
-                <p>Close the journey through a five-hour community session where preparation matters, but empathy and responsiveness matter more.</p>
-                <a href="#day-4">View day four <span aria-hidden="true">→</span></a>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <aside class="journey-sidebar" aria-labelledby="sidebar-title">
-          <div class="sidebar-card sidebar-card-dark">
-            <p class="eyebrow eyebrow-light">Quick guide</p>
-            <h2 id="sidebar-title">Before you leave</h2>
-            <ul class="icon-list">
-              <li><span aria-hidden="true">01</span> Wear comfortable walking shoes.</li>
-              <li><span aria-hidden="true">02</span> Bring a refillable water bottle.</li>
-              <li><span aria-hidden="true">03</span> Keep one notebook for all four days.</li>
-              <li><span aria-hidden="true">04</span> Ask before photographing people.</li>
-            </ul>
-          </div>
-
-          <div class="sidebar-card">
-            <p class="eyebrow">Location placeholder</p>
-            <figure class="media-placeholder map-placeholder" role="img" aria-label="Placeholder for a Google Maps overview of all four destinations">
-              <div class="placeholder-label">
-                <span>MAP PLACEHOLDER</span>
-                <strong>Google Maps overview of all four destinations</strong>
-                <small>Recommended crop: 900 × 900 px</small>
-              </div>
-            </figure>
-          </div>
-
-          <div class="sidebar-card accent-card">
-            <p class="eyebrow">Field note prompt</p>
-            <blockquote>What changed between what you expected to learn and what the place actually taught you?</blockquote>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="journey" class="itinerary-section section-pad" aria-labelledby="itinerary-title">
-      <div class="page-container">
-        <div class="section-heading-row section-heading-light">
-          <div>
-            <p class="eyebrow eyebrow-light">Itinerary preview</p>
-            <h2 id="itinerary-title">The four-day route</h2>
-          </div>
-          <p>Each visit happens on a different day so the group has enough time to observe, participate, discuss, and reflect.</p>
-        </div>
-
-        <ol class="timeline-list">
-          <li id="day-1" class="timeline-item" data-search="museum macan day 1 4 hours contemporary art">
-            <div class="timeline-marker"><span>01</span></div>
-            <div class="timeline-time">
-              <span>4 hours</span>
-              <small>Contemporary art</small>
-            </div>
-            <div class="timeline-content">
-              <h3>Museum MACAN</h3>
-              <p>Gallery orientation, guided observation, selected exhibit exploration, group interpretation, and a short reflection.</p>
-              <div class="timeline-tags"><span>Observe</span><span>Interpret</span><span>Discuss</span></div>
-            </div>
-          </li>
-
-          <li id="day-2" class="timeline-item" data-search="museum kota tua day 2 4.5 hours heritage history">
-            <div class="timeline-marker"><span>02</span></div>
-            <div class="timeline-time">
-              <span>4.5 hours</span>
-              <small>Urban history</small>
-            </div>
-            <div class="timeline-content">
-              <h3>Museum Kota Tua</h3>
-              <p>Historic district walk, museum visit, architectural observation, source comparison, and discussion about whose stories are represented.</p>
-              <div class="timeline-tags"><span>Trace</span><span>Compare</span><span>Question</span></div>
-            </div>
-          </li>
-
-          <li id="day-3" class="timeline-item" data-search="tzu chi day 3 3.5 hours recycling plastic sorting environment">
-            <div class="timeline-marker"><span>03</span></div>
-            <div class="timeline-time">
-              <span>3.5 hours</span>
-              <small>Environmental action</small>
-            </div>
-            <div class="timeline-content">
-              <h3>Tzu Chi: Sort Plastic</h3>
-              <p>Waste-system introduction, sorting demonstration, supervised activity, discussion of contamination, and a personal habit commitment.</p>
-              <div class="timeline-tags"><span>Sort</span><span>Act</span><span>Commit</span></div>
-            </div>
-          </li>
-
-          <li id="day-4" class="timeline-item" data-search="saaja day 4 5 hours teaching children community service">
-            <div class="timeline-marker"><span>04</span></div>
-            <div class="timeline-time">
-              <span>5 hours</span>
-              <small>Community learning</small>
-            </div>
-            <div class="timeline-content">
-              <h3>SAAJA: Teach Kids</h3>
-              <p>Team briefing, learning activities, small-group facilitation, breaks, feedback, cleanup, and a final reflection on service and reciprocity.</p>
-              <div class="timeline-tags"><span>Prepare</span><span>Teach</span><span>Listen</span></div>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="closing-section section-pad">
-      <div class="page-container closing-grid">
-        <figure class="media-placeholder closing-placeholder" role="img" aria-label="Placeholder for a closing group reflection photograph">
-          <div class="placeholder-label">
-            <span>IMAGE PLACEHOLDER</span>
-            <strong>Closing group reflection after the fourth day</strong>
-            <small>Recommended crop: 1400 × 900 px</small>
-          </div>
-        </figure>
-        <div>
-          <p class="eyebrow">After the route</p>
-          <h2>The final destination is a more responsible way of seeing the city.</h2>
-          <p>Use this homepage as the overview. The next development stage can add one detailed page for each destination, individual notes, bookings, maps, galleries, and reviews.</p>
-          <a class="button button-primary" href="#journey">Review the itinerary</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="page-container footer-grid">
-      <div>
-        <img src="./assets/images/jejak-jayakarta-logo.svg" alt="Jejak Jayakarta" width="300" height="80">
-        <p>A student-built cultural and community journey through Jakarta.</p>
-      </div>
-      <div>
-        <h2>Journey</h2>
-        <ul>
-          <li><a href="#day-1">Museum MACAN</a></li>
-          <li><a href="#day-2">Museum Kota Tua</a></li>
-          <li><a href="#day-3">Tzu Chi</a></li>
-          <li><a href="#day-4">SAAJA</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Project</h2>
-        <ul>
-          <li><a href="#editorial-note">About the journey</a></li>
-          <li><a href="#journey">Schedule</a></li>
-          <li><a href="mailto:hello@example.com">Contact placeholder</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="page-container footer-bottom">
-      <p>© <span id="current-year"></span> Jejak Jayakarta. Educational project.</p>
-      <p>Built with semantic HTML, CSS, JavaScript, Supabase, and GitHub Pages.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-  <script src="./assets/js/config.js" defer></script>
-  <script src="./assets/js/supabase-client.js" defer></script>
-  <script src="./assets/js/home.js" defer></script>
+<body class="site-page design-refresh audience-polish">
+<a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+<header class="site-header">
+<div class="utility-bar">
+<div class="page-container utility-inner">
+<p>Final OSN di Malang, OSN AI, Pelatnas IOI dan IOAI, Edutrip, dan pendukung perjalanan.</p>
+<div class="account-area">
+<span id="account-greeting">Sudah masuk</span>
+<button class="text-button" id="signout-button" type="button">Keluar</button>
+</div>
+</div>
+</div>
+<div class="brand-bar page-container">
+<a aria-label="Jejak Nusantara homepage" class="brand-link" href="./home.html">
+<img alt="Jejak Nusantara" height="96" src="./assets/images/jejak-nusantara-logo.svg" width="360"/>
+</a>
+<form class="site-search" id="site-search-form" role="search">
+<label class="visually-hidden" for="site-search-input">Cari cerita dan dokumentasi</label>
+<input id="site-search-input" placeholder="Cari OSN, Pelatnas IOAI, MACAN, transportasi..." type="search"/>
+<button aria-label="Cari" type="submit">Cari</button>
+</form>
+<button aria-controls="primary-navigation" aria-expanded="false" class="nav-toggle" id="nav-toggle" type="button">
+<span></span><span></span><span></span>
+<span class="visually-hidden">Buka/tutup navigasi</span>
+</button>
+</div>
+<nav aria-label="Navigasi utama" class="primary-nav" id="primary-navigation">
+<div class="page-container nav-inner"><a class="is-current" href="./home.html">Beranda</a><a href="./osn.html">OSN</a><a href="./pelatnas.html">Pelatnas</a><a href="./edutrip.html">Edutrip</a><a href="./pendukung.html">Pendukung</a><a href="./home.html#feedback">Feedback</a></div>
+</nav>
+</header>
+<main id="main-content">
+<section class="hero-section">
+<div class="page-container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow eyebrow-light">Jejak Nusantara · Rute Nasional</p>
+<h1>Jejak perjalanan OSN, Pelatnas, dan Edutrip yang saya susun untuk pembaca.</h1>
+<p class="hero-lead">Website ini saya susun sebagai jurnal perjalanan: ada Final OSN di Malang, OSN AI, Pelatnas IOI, Pelatnas IOAI, Edutrip, dan bagian pendukung seperti transportasi, hotel, makanan, serta dokumen. Setiap halaman dibuat agar pembaca tidak hanya melihat foto, tetapi juga memahami cerita, suasana, dan alasan kenapa momen-momen itu berarti.</p>
+<div class="hero-actions">
+<a class="button button-light" href="#program-osn">Lihat kartu cerita</a>
+<a class="button button-ghost-light" href="./pendukung.html">Lihat pendukung perjalanan</a>
+</div>
+<div aria-label="Link cepat rute" class="hero-route-pills">
+<a href="./osn.html">OSN</a>
+<a href="./pelatnas.html">Pelatnas</a>
+<a href="./edutrip.html">Edutrip</a>
+<a href="./pendukung.html">Pendukung Perjalanan</a>
+</div>
+<dl aria-label="Ringkasan perjalanan" class="hero-stats">
+<div><dt>19</dt><dd>kartu cerita</dd></div>
+<div><dt>4</dt><dd>folder pendukung</dd></div>
+<div><dt>80+</dt><dd>foto &amp; video</dd></div>
+</dl>
+</div>
+<div aria-label="Kolase foto dari perjalanan nasional" class="hero-showcase">
+<figure class="hero-showcase-card hero-showcase-main">
+<img alt="Foto bersama peserta OSN AI." src="./assets/images/osn-ai/foto-bersamaosnai.jpg"/>
+<figcaption><span>OSN AI</span>Momen pembukaan dan semangat awal</figcaption>
+</figure>
+<figure class="hero-showcase-card hero-showcase-small hero-showcase-top">
+<img alt="Suasana meeting room saat Pelatnas IOAI di UI." src="./assets/images/pelatnas/ioai-ui-tahap-1/uiroommeetingpelatnasioai.jpg"/>
+<figcaption><span>Pelatnas IOAI</span>Belajar sampai malam di meeting room</figcaption>
+</figure>
+<figure class="hero-showcase-card hero-showcase-small hero-showcase-mid">
+<img alt="Salah satu dokumentasi di Museum MACAN." src="./assets/images/edutrip/museum-macan/macan.jpg"/>
+<figcaption><span>Edutrip</span>Melihat seni dengan cara yang lebih personal</figcaption>
+</figure>
+<figure class="hero-showcase-card hero-showcase-small hero-showcase-bottom">
+<img alt="Suasana bandara dalam perjalanan OSN AI." src="./assets/images/trip-support/transportation/bandarasbyosnai.jpg"/>
+<figcaption><span>Pendukung</span>Perjalanan yang juga jadi bagian cerita</figcaption>
+</figure>
+<div class="hero-floating-note">
+<strong>Jurnal Lapangan Digital</strong>
+<span>Kartu klik · galeri · catatan refleksi</span>
+</div>
+</div>
+</div>
+</section>
+<section class="editorial-section section-pad" id="editorial-note">
+<div class="page-container editorial-grid">
+<div>
+<p class="eyebrow">Salam Redaksi</p>
+<h2>Selamat datang di jurnal perjalanan Jejak Nusantara.</h2>
+</div>
+<div class="editorial-copy">
+<p>Di dalam website ini, pembaca bisa mengikuti beberapa jalur perjalanan yang saling terhubung. Bagian OSN berisi cerita Final OSN di Malang dengan UMM sebagai titik utama, lalu ditambah dokumentasi OSN AI yang memberi sudut pandang lain tentang suasana lomba, kebersamaan peserta, dan momen setelah kompetisi.</p>
+<p>Bagian Pelatnas sekarang memuat dua cerita yang berbeda tetapi sama-sama penting. Jalur pertama adalah Pelatnas IOI milik Leonel: tahap 1 di UI, tahap 2 di IPB, dan Kebun Raya Bogor sebagai ruang jeda dan refleksi. Jalur kedua adalah Pelatnas IOAI milik Nicholas yang tahap 1 dan tahap 2 sama-sama berlangsung di UI, lengkap dengan cerita belajar machine learning, statistika, deep learning, simulasi, sampai proses seleksi delegasi Indonesia untuk IOAI.</p>
+<p class="editorial-signature">Bagian Edutrip menampilkan Museum MACAN, Kota Tua, Tzu Chi, dan SAAJA, sementara bagian Pendukung Perjalanan menyimpan detail seperti transportasi, hotel, makanan, dokumen, bahkan beberapa video. Dengan begitu, website ini bukan cuma daftar tempat, tetapi jurnal pengalaman yang terasa lebih hidup.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="category-overview-title" class="category-overview-section section-pad">
+<div class="page-container">
+<div class="section-heading-row">
+<div>
+<p class="eyebrow">Pembagian Folder</p>
+<h2 id="category-overview-title">Empat bagian utama dengan cerita yang dekat dan mudah diikuti.</h2>
+</div>
+<p>Setiap kartu bisa diklik untuk membaca cerita yang lebih lengkap. Sekarang bagian Pelatnas sudah memuat jalur IOI dan IOAI, Museum MACAN sudah terisi foto, dan beberapa cerita juga dilengkapi video.</p>
+</div>
+<div aria-label="Kelompok program" class="category-grid category-grid-four">
+<a class="category-card" href="./osn.html">
+<span class="category-number">01</span>
+<h3>OSN</h3>
+<p>Final OSN di Malang dan tambahan dokumentasi OSN AI yang memperlihatkan suasana lomba, kebersamaan, dan momen setelah kompetisi.</p>
+<strong>Buka halaman OSN</strong>
+</a>
+<a class="category-card" href="./pelatnas.html">
+<span class="category-number">02</span>
+<h3>Pelatnas</h3>
+<p>Dua jalur pelatnas: IOI milik Leonel dan IOAI milik Nicholas, kini dilengkapi jadwal daring, jadwal luring UI, simulasi, dan capaian APOAI.</p>
+<strong>Buka halaman Pelatnas</strong>
+</a>
+<a class="category-card" href="./edutrip.html">
+<span class="category-number">03</span>
+<h3>Edutrip</h3>
+<p>Jalur edutrip untuk melihat sisi seni, sejarah, lingkungan, dan pelayanan melalui Museum MACAN, Kota Tua, Tzu Chi, dan SAAJA.</p>
+<strong>Buka halaman Edutrip</strong>
+</a>
+<a class="category-card" href="./pendukung.html">
+<span class="category-number">04</span>
+<h3>Pendukung Perjalanan</h3>
+<p>Transportasi, hotel, makanan, dokumen, dan detail kecil lain yang membuat keseluruhan perjalanan terasa lebih nyata.</p>
+<strong>Buka halaman Pendukung</strong>
+</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="program-hub-title" class="program-hub-section section-pad" id="program-hub">
+<div class="page-container">
+<div class="section-heading-row">
+<div>
+<p class="eyebrow">Halaman Terpisah</p>
+<h2 id="program-hub-title">Sekarang tiap bagian punya halaman sendiri.</h2>
+</div>
+<p>Beranda ini hanya menjadi pintu masuk. Detail panjang, galeri foto, video, pengalaman, dan refleksi dipindahkan ke halaman OSN, Pelatnas, Edutrip, dan Pendukung Perjalanan.</p>
+<p aria-live="polite" class="search-results-status" id="search-results-status">Kolom pencarian di atas dapat dipakai untuk menemukan bagian perjalanan, dokumentasi, atau kata kunci tertentu.</p></div>
+<div class="split-page-grid">
+<a class="split-page-card" href="./osn.html">
+<img alt="Foto bersama OSN AI" loading="lazy" src="./assets/images/osn-ai/foto-bersamaosnai.jpg"/>
+<span>Program 01</span><h3>OSN</h3><p>Final OSN di Malang, OSN AI, UMM, dan wisata Malang-Batu.</p>
+</a>
+<a class="split-page-card" href="./pelatnas.html">
+<img alt="Meeting room Pelatnas IOAI" loading="lazy" src="./assets/images/pelatnas/ioai-ui-tahap-1/uiroommeetingpelatnasioai.jpg"/>
+<span>Program 02</span><h3>Pelatnas</h3><p>Pelatnas IOI milik Leonel dan Pelatnas IOAI milik Nicholas.</p>
+</a>
+<a class="split-page-card" href="./edutrip.html">
+<img alt="Museum MACAN" loading="lazy" src="./assets/images/edutrip/museum-macan/macan.jpg"/>
+<span>Program 03</span><h3>Edutrip</h3><p>Museum MACAN, Kota Tua, Tzu Chi, dan SAAJA.</p>
+</a>
+<a class="split-page-card" href="./pendukung.html">
+<img alt="Bandara saat perjalanan" loading="lazy" src="./assets/images/trip-support/transportation/bandarasbyosnai.jpg"/>
+<span>Folder Foto</span><h3>Pendukung Perjalanan</h3><p>Transportasi, hotel, makanan, dan dokumen kegiatan.</p>
+</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="feedback-title" class="feedback-section section-pad" id="feedback">
+<div class="page-container feedback-grid">
+<div class="feedback-copy">
+<p class="eyebrow">Suara Pembaca</p>
+<h2 id="feedback-title">Punya kesan, saran, atau pertanyaan tentang jurnal ini?</h2>
+<p>Feedback dari pembaca membantu website ini jadi lebih jelas, lebih enak dibaca, dan lebih terasa seperti jurnal perjalanan yang hidup. Masukan boleh tentang isi cerita, foto, desain, atau bagian mana yang masih membingungkan.</p>
+<div aria-label="Contoh feedback" class="feedback-notes">
+<span>Deskripsi tempat</span>
+<span>Foto perjalanan</span>
+<span>Desain website</span>
+<span>Alur cerita</span>
+</div>
+<p class="feedback-small-note">Catatan: form ini masih mode lokal, jadi feedback akan tersimpan di browser yang sedang dipakai.</p>
+</div>
+<form class="feedback-form" id="feedback-form" novalidate="">
+<div class="form-heading">
+<p class="eyebrow">Form Feedback</p>
+<h3>Kirim masukan untuk redaksi</h3>
+</div>
+<div class="field-grid">
+<div class="field-group">
+<label for="feedback-name">Nama</label>
+<input autocomplete="name" id="feedback-name" name="name" placeholder="Nama pembaca" required="" type="text"/>
+</div>
+<div class="field-group">
+<label for="feedback-role">Kelas / peran</label>
+<input id="feedback-role" name="role" placeholder="Contoh: 11.4 / guru / teman" type="text"/>
+</div>
+</div>
+<div class="field-grid">
+<div class="field-group">
+<label for="feedback-topic">Bagian yang dikomentari</label>
+<select id="feedback-topic" name="topic" required="">
+<option value="">Refleksi ini menyoroti bagian</option>
+<option value="OSN">OSN</option>
+<option value="Pelatnas">Pelatnas</option>
+<option value="Edutrip">Edutrip</option>
+<option value="Pendukung Perjalanan">Pendukung Perjalanan</option>
+<option value="Desain Website">Desain Website</option>
+<option value="Keseluruhan">Keseluruhan</option>
+</select>
+</div>
+<div class="field-group">
+<label for="feedback-rating">Penilaian singkat</label>
+<select id="feedback-rating" name="rating" required="">
+<option value="">Refleksi ini menyoroti penilaian</option>
+<option value="5">Sangat menarik</option>
+<option value="4">Menarik</option>
+<option value="3">Cukup jelas</option>
+<option value="2">Perlu diperbaiki</option>
+<option value="1">Masih membingungkan</option>
+</select>
+</div>
+</div>
+<div class="field-group">
+<label for="feedback-message">Isi feedback</label>
+<textarea id="feedback-message" minlength="10" name="message" placeholder="Tuliskan masukan, kesan, atau pertanyaan pembaca di sini..." required="" rows="5"></textarea>
+</div>
+<button class="button button-primary button-full" type="submit">
+<span>Kirim feedback</span>
+<span aria-hidden="true">→</span>
+</button>
+<p aria-live="polite" class="form-status feedback-status" id="feedback-status"></p>
+<div class="feedback-preview" hidden="" id="feedback-preview"></div>
+</form>
+</div>
+</section>
+<section class="closing-section section-pad">
+<div class="page-container closing-grid">
+<figure class="closing-placeholder photo-frame">
+<img alt="Momen pengumuman lolos delegasi IOAI." class="photo-cover" loading="lazy" src="./assets/images/pelatnas/ioai-ui-tahap-2/melolosioai.jpg"/>
+</figure>
+<div>
+<p class="eyebrow">Setelah perjalanan</p>
+<h2>Website ini bukan hanya kumpulan tempat, tetapi arsip pengalaman yang ingin saya bagikan kepada pembaca secara lebih utuh dan lebih personal.</h2>
+<p>Halaman ini sekarang memuat dua jalur lomba dan pelatnas, tambahan foto-foto baru, serta beberapa video. Setiap kartu bisa dibuka untuk melihat kegiatan, pelajaran yang didapat, dan bukti perjalanan dengan konteks yang lebih kaya.</p>
+<a class="button button-primary" href="./osn.html">Mulai dari OSN</a>
+<a class="button button-secondary" href="#feedback">Kirim feedback</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="page-container footer-grid">
+<div>
+<img alt="Jejak Nusantara" height="80" src="./assets/images/jejak-nusantara-logo.svg" width="300"/>
+<p>Jurnal perjalanan edukasi dari Final OSN di Malang, OSN AI, Pelatnas IOI dan IOAI, Edutrip, dan Pendukung Perjalanan.</p>
+</div>
+<div>
+<h2>Perjalanan</h2>
+<ul>
+<li><a href="./osn.html">OSN</a></li>
+<li><a href="./pelatnas.html">Pelatnas</a></li>
+<li><a href="./edutrip.html">Edutrip</a></li>
+<li><a href="./pendukung.html">Pendukung Perjalanan</a></li>
+</ul>
+</div>
+<div>
+<h2>Proyek</h2>
+<ul>
+<li><a href="#editorial-note">Tentang pembagian</a></li>
+<li><a href="./osn.html">Jadwal</a></li>
+<li><a href="#feedback">Kirim feedback</a></li>
+</ul>
+</div>
+</div>
+<div class="page-container footer-bottom">
+<p>© <span id="current-year"></span> Jejak Nusantara. Proyek edukasi.</p>
+<p>Dibuat oleh Nicholas Ardi Tirta XI-5 dan Leonel Chailand 11.4.</p>
+</div>
+</footer>
+<div aria-describedby="modal-overview" aria-labelledby="modal-title" aria-modal="true" class="destination-modal" hidden="" id="destination-modal" role="dialog">
+<div class="destination-modal-backdrop" data-modal-close=""></div>
+<article class="destination-modal-card" role="document">
+<button aria-label="Tutup cerita destinasi" class="modal-close" data-modal-close="" type="button">×</button>
+<div class="modal-hero">
+<figure aria-label="Foto besar destinasi" class="media-placeholder modal-media" id="modal-media" role="img">
+<div class="placeholder-label">
+<span>FOTO BELUM ADA</span>
+<strong id="modal-image-title">Foto destinasi</strong>
+<small>Dokumentasi belum tersedia</small>
+</div>
+</figure>
+<div class="modal-heading">
+<p class="eyebrow" id="modal-program">Program</p>
+<h2 id="modal-title">Judul destinasi</h2>
+<div aria-label="Ringkasan destinasi" class="modal-meta">
+<span id="modal-duration">Durasi</span>
+<span id="modal-focus">Fokus</span>
+</div>
+<p class="modal-lead" id="modal-overview">Teks cerita</p>
+</div>
+</div>
+<div aria-label="Galeri foto terkait" class="modal-gallery" id="modal-gallery"></div>
+<div class="modal-detail-grid">
+<section>
+<h3>Pengalaman di lokasi</h3>
+<ul class="modal-list" id="modal-did"></ul>
+</section>
+<section>
+<h3>Pelajaran yang didapat</h3>
+<p id="modal-learned"></p>
+</section>
+<section>
+<h3>Ruang refleksi</h3>
+<p id="modal-journal"></p>
+</section>
+<section>
+<h3>Dokumentasi pendukung</h3>
+<p id="modal-evidence"></p>
+</section>
+<section><h3>Tautan terkait</h3><div class="modal-links" hidden="" id="modal-links"></div></section></div>
+</article>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="./assets/js/config.js"></script><script src="./assets/js/supabase-client.js"></script><script defer="" src="./assets/js/home.js"></script>
 </body>
 </html>

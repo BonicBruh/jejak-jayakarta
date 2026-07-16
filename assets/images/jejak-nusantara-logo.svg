@@ -3,21 +3,21 @@
   <desc id="desc">A route-shaped letter J with multiple stops, beside the Jejak Nusantara wordmark.</desc>
   <defs>
     <linearGradient id="route" x1="12" y1="14" x2="84" y2="86" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#A23A32"/>
-      <stop offset="0.35" stop-color="#C88A2A"/>
-      <stop offset="0.68" stop-color="#1F6F68"/>
-      <stop offset="1" stop-color="#17232A"/>
+      <stop stop-color="#C8102E"/>
+      <stop offset="0.35" stop-color="#E3A008"/>
+      <stop offset="0.68" stop-color="#243B66"/>
+      <stop offset="1" stop-color="#181820"/>
     </linearGradient>
   </defs>
-  <rect x="2" y="2" width="92" height="92" rx="24" fill="#F7F1E7" stroke="#DCCEBB" stroke-width="4"/>
+  <rect x="2" y="2" width="92" height="92" rx="24" fill="#FFF3E6" stroke="#E8CEC8" stroke-width="4"/>
   <path d="M64 19V55C64 70.464 51.464 83 36 83C25.5 83 17.8 78.8 12 70.7" stroke="url(#route)" stroke-width="10" stroke-linecap="round"/>
-  <circle cx="64" cy="20" r="7" fill="#A23A32" stroke="#FFFDF8" stroke-width="3"/>
-  <circle cx="64" cy="36" r="6" fill="#C88A2A" stroke="#FFFDF8" stroke-width="3"/>
-  <circle cx="64" cy="52" r="6" fill="#1F6F68" stroke="#FFFDF8" stroke-width="3"/>
-  <circle cx="55" cy="69" r="6" fill="#A23A32" stroke="#FFFDF8" stroke-width="3"/>
-  <circle cx="39" cy="80" r="6" fill="#C88A2A" stroke="#FFFDF8" stroke-width="3"/>
-  <circle cx="24" cy="78" r="6" fill="#1F6F68" stroke="#FFFDF8" stroke-width="3"/>
-  <path d="M76 14L80.5 23H71.5L76 14Z" fill="#17232A"/>
-  <text x="112" y="43" fill="#17232A" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" letter-spacing="0">Jejak Nusantara</text>
-  <text x="113" y="66" fill="#1F6F68" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.55">CAMPUS • CULTURE • NATURE</text>
+  <circle cx="64" cy="20" r="7" fill="#C8102E" stroke="#FFFCF7" stroke-width="3"/>
+  <circle cx="64" cy="36" r="6" fill="#E3A008" stroke="#FFFCF7" stroke-width="3"/>
+  <circle cx="64" cy="52" r="6" fill="#243B66" stroke="#FFFCF7" stroke-width="3"/>
+  <circle cx="55" cy="69" r="6" fill="#C8102E" stroke="#FFFCF7" stroke-width="3"/>
+  <circle cx="39" cy="80" r="6" fill="#E3A008" stroke="#FFFCF7" stroke-width="3"/>
+  <circle cx="24" cy="78" r="6" fill="#243B66" stroke="#FFFCF7" stroke-width="3"/>
+  <path d="M76 14L80.5 23H71.5L76 14Z" fill="#181820"/>
+  <text x="112" y="43" fill="#181820" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" letter-spacing="0">Jejak Nusantara</text>
+  <text x="113" y="66" fill="#243B66" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.55">CAMPUS • CULTURE • NATURE</text>
 </svg>

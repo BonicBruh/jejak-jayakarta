@@ -27,11 +27,6 @@
   const modalDuration = document.querySelector("#modal-duration");
   const modalFocus = document.querySelector("#modal-focus");
   const modalOverview = document.querySelector("#modal-overview");
-  const modalDid = document.querySelector("#modal-did");
-  const modalLearned = document.querySelector("#modal-learned");
-  const modalJournal = document.querySelector("#modal-journal");
-  const modalEvidence = document.querySelector("#modal-evidence");
-  const modalLinks = document.querySelector("#modal-links");
 
   const destinationDetails = {
   "umm": {
@@ -55,14 +50,6 @@
       }
     ],
     "overview": "UMM menjadi titik utama dalam cerita Final OSN di Malang. Buat saya, tempat ini selalu terasa lebih dari sekadar kampus karena di sinilah rasa tegang, fokus, dan bangga bercampur jadi satu. Datang ke final OSN membuat perjalanan terasa jauh lebih serius, dan UMM jadi latar yang kuat untuk pengalaman itu.",
-    "did": [
-      "Datang ke area UMM sebagai bagian dari rangkaian Final OSN di Malang dan melihat beberapa titik penting seperti gerbang, gedung utama, dan ruang kegiatan.",
-      "Merasakan suasana final yang serius, mulai dari persiapan sampai ritme lomba dan interaksi dengan peserta lain.",
-      "Membandingkan suasana belajar di sekolah dengan suasana lomba di kampus yang menuntut kemandirian dan fokus lebih tinggi."
-    ],
-    "learned": "Saya belajar bahwa sampai ke tahap final bukan cuma soal bisa mengerjakan soal, tetapi juga soal mental, konsistensi, dan kemampuan menjaga fokus di bawah tekanan.",
-    "journal": "Refleksi ini menyoroti momen di UMM yang paling berkesan dan alasan final OSN terasa berbeda dibandingkan belajar atau lomba sebelumnya.",
-    "evidence": "Foto gerbang UMM, gedung utama, suasana kegiatan, dan dokumentasi yang menunjukkan konteks Final OSN di Malang.",
     "tags": [
       "OSN",
       "Kampus",
@@ -118,15 +105,7 @@
         "alt": "Berfoto di depan UMM dalam rangkaian OSN AI."
       }
     ],
-    "overview": "Bagian ini merupakan tambahan cerita dari Nicholas Ardi Tirta tentang OSN AI. Menurut saya, dokumentasi OSN AI terasa menarik karena tidak hanya memperlihatkan sisi kompetisinya, tetapi juga sisi manusianya: pembukaan yang ramai, ruang lomba yang penuh fokus, kebersamaan dengan teman-teman, sampai momen award yang rasanya sulit dilupakan.",
-    "did": [
-      "Mengikuti rangkaian OSN AI dari pembukaan, sesi lomba, sampai penutupan dan award.",
-      "Mendokumentasikan suasana ruang kompetisi, kebersamaan dengan peserta lain, dan beberapa momen yang terasa sangat personal.",
-      "Menikmati prosesnya bukan cuma sebagai lomba, tetapi juga sebagai pengalaman bertemu orang-orang yang punya minat serupa."
-    ],
-    "learned": "Saya merasa OSN AI mengajarkan bahwa kompetisi itu penting, tetapi hubungan dengan teman-teman dan pengalaman selama prosesnya juga sama berharganya.",
-    "journal": "Refleksi ini menelusuri suasana OSN AI dari awal sampai akhir, lalu menyoroti satu momen yang paling menempel di ingatan.",
-    "evidence": "Foto pembukaan, ruang lomba, foto bersama teman, award night, dan momen memegang medali.",
+    "overview": "Bagian ini merupakan cerita saya tentang OSN AI. Dokumentasinya tidak hanya memperlihatkan sisi kompetisi, tetapi juga sisi manusiawi yang saya alami: pembukaan yang ramai, ruang lomba yang penuh fokus, kebersamaan dengan teman-teman, sampai momen award yang sulit saya lupakan.",
     "tags": [
       "OSN",
       "AI",
@@ -147,14 +126,6 @@
       }
     ],
     "overview": "Istana Oleh-Oleh Brawijaya hadir sebagai bagian OSN karena tempat ini menunjukkan sisi lain dari perjalanan: budaya lokal dan ekonomi kecil. Menurut saya, oleh-oleh bukan sekadar barang yang dibeli sebelum pulang, tetapi cara suatu daerah memperkenalkan identitasnya kepada pengunjung.",
-    "did": [
-      "Melihat berbagai produk lokal, mulai dari makanan, souvenir, sampai cara toko menata barangnya.",
-      "Memperhatikan produk mana yang paling menarik perhatian dan kenapa kemasannya terasa meyakinkan.",
-      "Mencoba melihat oleh-oleh sebagai bagian dari budaya, branding, dan usaha lokal, bukan cuma belanja biasa."
-    ],
-    "learned": "Saya belajar bahwa produk lokal bisa terasa lebih bernilai kalau dikemas dengan baik. Branding itu penting, bahkan untuk hal yang terlihat sederhana.",
-    "journal": "Refleksi ini melihat satu produk oleh-oleh yang paling menarik dan alasan produk itu terasa mewakili Malang atau Jawa Timur.",
-    "evidence": "Foto bagian depan Istana Oleh-Oleh Brawijaya dan bisa ditambah foto rak produk kalau ada.",
     "tags": [
       "OSN",
       "Oleh-oleh",
@@ -175,14 +146,6 @@
       }
     ],
     "overview": "Jatim Park 2 awalnya terasa seperti tempat rekreasi biasa, tetapi setelah diperhatikan, banyak bagian yang sebenarnya bisa dipakai untuk belajar. Saya suka karena edukasinya tidak terasa terlalu formal.",
-    "did": [
-      "Mengunjungi area bertema satwa dan sains sambil memperhatikan informasi yang ditampilkan.",
-      "Melihat bagaimana papan informasi, display, dan alur pengunjung membantu orang memahami isi tempat tersebut.",
-      "Mengamati bagaimana tempat wisata menyeimbangkan edukasi, hiburan, keamanan, dan kenyamanan pengunjung."
-    ],
-    "learned": "Saya belajar bahwa sains bisa lebih mudah dipahami kalau disampaikan secara visual dan dekat dengan pengalaman langsung.",
-    "journal": "Refleksi ini menyoroti satu area atau objek yang paling edukatif di Jatim Park 2 beserta alasannya.",
-    "evidence": "Foto gerbang Jatim Park 2 dan bisa dilengkapi dengan foto area satwa, display, atau papan informasi.",
     "tags": [
       "OSN",
       "Wisata",
@@ -215,14 +178,6 @@
       }
     ],
     "overview": "San Terra terasa paling kuat dari sisi visual. Menurut saya, tempat ini memang dibuat supaya pengunjung nyaman berjalan, mengambil foto, dan menikmati warna-warna yang rapih disusun.",
-    "did": [
-      "Melihat area bunga, bangunan bertema, dan spot foto yang ditata dengan cukup jelas.",
-      "Memperhatikan bagaimana warna, komposisi, dan jalur pengunjung dirancang untuk memberi pengalaman yang enak dipandang.",
-      "Mencoba memahami kenapa tempat yang estetik bisa terasa lebih menarik walau aktivitasnya sederhana."
-    ],
-    "learned": "Saya belajar bahwa pengalaman tempat tidak hanya dibentuk oleh isi, tetapi juga oleh tampilan visual, alur ruang, dan suasana yang dibangun.",
-    "journal": "Refleksi ini membahas kenapa desain visual dapat sangat memengaruhi kesan pengunjung di San Terra.",
-    "evidence": "Foto pintu masuk, taman bunga, bangunan tematik, dan spot foto di dalam area San Terra.",
     "tags": [
       "OSN",
       "Visual",
@@ -259,14 +214,6 @@
       }
     ],
     "overview": "Coban Rondo memberi suasana yang berbeda dari tempat sebelumnya. Setelah banyak kegiatan, berada di area air terjun terasa lebih tenang dan menyegarkan. Buat saya, tempat ini cocok untuk refleksi sekaligus menikmati alam.",
-    "did": [
-      "Melihat area air terjun, suasana hutan, jalur pengunjung, dan titik yang perlu diperhatikan untuk keselamatan.",
-      "Menikmati suasana alam sambil memperhatikan bagaimana tempat wisata alam dikelola.",
-      "Refleksi tentang hubungan antara pengunjung, kebersihan, keamanan, dan kelestarian tempat wisata."
-    ],
-    "learned": "Saya belajar bahwa menikmati alam juga berarti ikut bertanggung jawab menjaganya.",
-    "journal": "Refleksi ini membahas bagaimana pengunjung bisa menikmati Coban Rondo tanpa merusak lingkungannya.",
-    "evidence": "Foto gerbang, air terjun, suasana sekitar, dan momen makan bersama di Coban Rondo.",
     "tags": [
       "OSN",
       "Alam",
@@ -290,15 +237,7 @@
         "alt": "Suasana lab komputer saat Pelatnas IOI di UI."
       }
     ],
-    "overview": "Ini adalah catatan Leonel untuk Pelatnas IOI tahap 1 di UI. Setelah Final OSN, suasana di UI terasa seperti pintu masuk ke level yang lebih serius. Bukan cuma soal latihan, tetapi juga adaptasi terhadap ritme baru, target baru, dan standar yang terasa lebih tinggi.",
-    "did": [
-      "Mengikuti rangkaian Pelatnas IOI tahap 1 di UI sebagai kelanjutan dari hasil OSN.",
-      "Melihat atau merasakan suasana latihan informatika di lab komputer yang lebih intens dan terstruktur.",
-      "Beradaptasi dengan ritme latihan yang menuntut fokus panjang dan disiplin lebih kuat."
-    ],
-    "learned": "Saya belajar bahwa Pelatnas bukan sekadar lanjutan lomba, tetapi proses pembentukan cara berpikir untuk menyesuaikan diri dengan standar internasional seperti IOI.",
-    "journal": "Refleksi ini menjelaskan bagaimana UI terasa sebagai titik transisi dari OSN menuju persiapan IOI yang lebih serius.",
-    "evidence": "Foto landmark UI, kegiatan lab komputer, dan dokumentasi suasana Pelatnas tahap 1.",
+    "overview": "Ini adalah catatan saya tentang Pelatnas IOI tahap 1 di UI. Setelah Final OSN, suasana di UI terasa seperti pintu masuk ke level yang lebih serius. Bagi saya, tahap ini bukan cuma soal latihan, tetapi juga adaptasi terhadap ritme, target, dan standar baru yang lebih tinggi.",
     "tags": [
       "Pelatnas",
       "IOI",
@@ -318,15 +257,7 @@
         "alt": "Suasana lab komputer saat Pelatnas IOI di IPB."
       }
     ],
-    "overview": "Bagi Leonel, tahap 2 di IPB terasa lebih matang dan menuntut konsistensi lebih tinggi. Kalau UI terasa sebagai awal transisi, IPB terasa seperti tahap yang menegaskan bahwa persiapan IOI memang butuh latihan serius dan ritme yang dijaga terus.",
-    "did": [
-      "Mengikuti rangkaian Pelatnas tahap 2 di IPB dengan fokus pada latihan dan pendalaman materi informatika.",
-      "Menjaga ritme, konsentrasi, dan mental saat latihan berlangsung dalam waktu cukup panjang.",
-      "Merasakan bahwa tahap ini lebih menuntut konsistensi dibanding sekadar semangat awal."
-    ],
-    "learned": "Saya belajar bahwa kemampuan bagus saja tidak cukup; yang lebih menentukan justru bagaimana menjaga kualitas kerja secara konsisten dari hari ke hari.",
-    "journal": "Refleksi ini membandingkan suasana dan tuntutan antara Pelatnas tahap 1 di UI dan tahap 2 di IPB.",
-    "evidence": "Foto aktivitas lab komputer di IPB dan catatan yang menunjukkan fokus latihan tahap 2.",
+    "overview": "Bagi saya, tahap 2 di IPB terasa lebih matang dan menuntut konsistensi yang lebih tinggi. Kalau UI terasa sebagai awal transisi, IPB menegaskan bahwa persiapan IOI membutuhkan latihan serius dan ritme yang terus saya jaga.",
     "tags": [
       "Pelatnas",
       "IOI",
@@ -363,14 +294,6 @@
       }
     ],
     "overview": "Kebun Raya Bogor hadir sebagai bagian pelengkap dari jalur Pelatnas karena suasananya memberi jeda yang menyenangkan di tengah ritme latihan. Buat saya, tempat seperti ini penting karena membantu pikiran lebih lega sebelum kembali ke aktivitas yang intens.",
-    "did": [
-      "Berjalan mengelilingi area Kebun Raya Bogor sambil menikmati lanskap dan suasana yang lebih santai.",
-      "Mengamati lingkungan, pepohonan, area sekitar, dan detail kecil yang membuat tempat ini terasa hidup.",
-      "Menggunakan waktu di sini sebagai ruang jeda dan refleksi di sela rangkaian pelatnas."
-    ],
-    "learned": "Saya belajar bahwa jeda yang sehat justru membantu proses belajar berjalan lebih panjang dan lebih stabil.",
-    "journal": "Refleksi ini menunjukkan kenapa tempat yang tenang seperti Kebun Raya Bogor bisa penting di tengah jadwal belajar yang padat.",
-    "evidence": "Foto jalan setapak, area sekitar, lanskap, dan detail kecil seperti satwa yang ditemui.",
     "tags": [
       "Pelatnas",
       "Refleksi",
@@ -443,16 +366,7 @@
         "alt": "Video pengumuman lolos ke tahap 2 Pelatnas IOAI."
       }
     ],
-    "overview": "Bagian ini merupakan catatan Nicholas Ardi Tirta tentang Pelatnas IOAI tahap 1 yang berlangsung offline selama dua minggu di UI. Di sini, ia belajar banyak hal tentang machine learning, teori matematika statistika, dan mulai masuk ke deep learning terutama untuk image. Menurut saya, yang membuat cerita ini menarik justru momen ketika simulasi pertama belum cukup untuk lolos: dari sana muncul dorongan untuk belajar lebih serius, mulai rajin membuat catatan, dan memanfaatkan meeting room setiap malam sampai sekitar jam 12 untuk belajar dan berdiskusi.",
-    "did": [
-      "Mengikuti pelatnas offline selama dua minggu di UI dengan materi machine learning, statistika, dan pengenalan deep learning.",
-      "Menghadapi dua simulasi yang menjadi penentu. Pada simulasi pertama, Nicholas mendapat top 15 yang belum cukup untuk lolos.",
-      "Menggunakan meeting room setiap malam setelah pulang dari UI sampai sekitar jam 12 untuk belajar, berdiskusi, dan membuat catatan.",
-      "Datang ke simulasi kedua dengan persiapan yang lebih baik dan akhirnya meraih top 6 overall yang mengamankan tempat di pelatnas tahap 2."
-    ],
-    "learned": "Bagian ini terasa jujur karena menunjukkan bahwa progres tidak selalu langsung mulus. Saya belajar bahwa hasil yang kurang memuaskan bisa jadi titik balik kalau direspons dengan evaluasi, catatan yang rapi, dan kebiasaan belajar yang lebih disiplin.",
-    "journal": "Refleksi ini menunjukkan bagaimana hasil yang kurang memuaskan di simulasi pertama bisa menjadi awal perubahan strategi belajar yang lebih matang.",
-    "evidence": "Foto banner, sesi materi, meeting room, test day, makan bersama, momen refreshing, foto bersama, dan video pengumuman lolos ke tahap 2.",
+    "overview": "Bagian ini merupakan catatan saya tentang Pelatnas IOAI tahap 1 yang berlangsung offline selama dua minggu di UI. Saya mempelajari machine learning, teori matematika statistika, dan mulai masuk ke deep learning terutama untuk image. Simulasi pertama saya belum cukup untuk lolos, tetapi kegagalan itu mendorong saya belajar lebih serius, membuat catatan, dan memanfaatkan meeting room setiap malam sampai sekitar jam 12 untuk berdiskusi dan berlatih.",
     "tags": [
       "Pelatnas",
       "IOAI",
@@ -484,29 +398,13 @@
         "alt": "Kebersamaan peserta pada tahap akhir pelatnas."
       }
     ],
-    "overview": "Tahap 2 Pelatnas IOAI offline berlangsung lebih singkat karena ada masalah pendanaan dari pemerintah, jadi sesi offline-nya hanya sekitar empat hari. Sebelumnya ada sesi online yang membahas CV, NLP, dan audio, sehingga tahap ini terasa lebih mendalam di aspek implementasi deep learning. Dua hari pertama dipakai untuk latihan dan recap materi, lalu datang dua momen yang sangat penting: APOAI dan simulasi akhir. Dari empat soal APOAI selama enam jam, lalu simulasi kedua selama lima jam dengan tiga kategori CV, NLP, dan audio, Nicholas berhasil menjaga performa dengan baik. Ketika nilai APOAI menempatkannya di top 10 dari 125 peserta, ditambah hasil simulasi yang memberinya rank 3 dari 8 orang, akhirnya ia mengamankan posisi IDN2 dan masuk ke gang of four sebagai delegasi Indonesia untuk IOAI.",
-    "did": [
-      "Mengikuti sesi online pendalaman CV, NLP, dan audio sebelum rangkaian offline dimulai.",
-      "Menjalani pelatnas offline yang singkat di UI dengan dua hari sesi latihan dan recap materi.",
-      "Mengerjakan APOAI yang terdiri dari empat soal selama enam jam.",
-      "Mengikuti simulasi akhir selama lima jam dengan tiga soal: CV, NLP, dan audio.",
-      "Menunggu perhitungan skor akhir dan akhirnya berhasil menjadi IDN2, satu dari empat delegasi Indonesia untuk IOAI."
-    ],
-    "learned": "Saya merasa cerita ini kuat karena memperlihatkan bagaimana tahap akhir pelatnas bukan hanya soal belajar lebih banyak, tetapi juga soal tampil tenang ketika semuanya benar-benar menentukan. Konsistensi kecil dari tahap 1 akhirnya terasa hasilnya di sini.",
-    "journal": "Refleksi ini membahas bagaimana performa di APOAI dan simulasi akhir menjadi titik penting dalam perjalanan menuju delegasi nasional.",
-    "evidence": "Foto test day, foto bersama, momen pengumuman, dan hasil akhir yang menempatkan Nicholas sebagai IDN2.",
+    "overview": "Tahap 2 Pelatnas IOAI offline berlangsung lebih singkat karena ada masalah pendanaan dari pemerintah, jadi sesi offline-nya hanya sekitar empat hari. Sebelumnya saya mengikuti sesi online tentang CV, NLP, dan audio, sehingga tahap ini terasa lebih mendalam dalam implementasi deep learning. Dua hari pertama saya gunakan untuk latihan dan recap materi, lalu saya menghadapi APOAI dan simulasi akhir. Dari empat soal APOAI selama enam jam dan simulasi lima jam dengan kategori CV, NLP, dan audio, saya menjaga performa dengan baik. Nilai APOAI menempatkan saya di top 10 dari 125 peserta, sementara simulasi memberi saya rank 3 dari 8 orang. Hasil gabungan itu membuat saya mengamankan posisi IDN2 dan masuk ke gang of four sebagai delegasi Indonesia untuk IOAI.",
     "tags": [
       "Pelatnas",
       "IOAI",
       "IDN2"
     ],
-    "search": "pelatnas ioai tahap 2 ui apoai cv nlp audio top 10 idn2 delegate",
-    "links": [
-      {
-        "label": "APOAI 2026 questions",
-        "url": "https://www.bohrium.com/en/competitions/91841752314?tab=introduce"
-      }
-    ]
+    "search": "pelatnas ioai tahap 2 ui apoai cv nlp audio top 10 idn2 delegate"
   },
   "museum-macan": {
     "program": "Edutrip",
@@ -570,14 +468,6 @@
       }
     ],
     "overview": "Sekarang Museum MACAN jadi salah satu bagian yang paling enak dieksplor karena dokumentasinya sudah jauh lebih lengkap. Menurut saya, tempat ini menarik bukan karena semua orang harus punya tafsir yang sama, tetapi justru karena karya-karyanya mendorong kita berhenti sejenak, melihat detail, lalu berani punya opini sendiri.",
-    "did": [
-      "Berjalan mengelilingi area pamer dan mengamati beberapa karya secara lebih pelan.",
-      "Mencoba menafsirkan karya berdasarkan kesan pribadi, bukan cuma membaca label.",
-      "Mendokumentasikan beberapa ruang dan instalasi yang menurut saya paling menarik secara visual maupun ide."
-    ],
-    "learned": "Saya belajar bahwa seni kontemporer kadang tidak langsung mudah dipahami, tetapi justru di situlah menariknya: kita diajak berpikir, merasa, dan menafsirkan dengan lebih jujur.",
-    "journal": "Refleksi ini menyoroti satu karya atau ruang di Museum MACAN yang paling menarik, lalu membahas kesan pribadi yang muncul dari karya tersebut.",
-    "evidence": "Foto-foto dokumentasi Museum MACAN dan satu video singkat dari suasana di dalamnya.",
     "tags": [
       "Edutrip",
       "Seni",
@@ -610,14 +500,6 @@
       }
     ],
     "overview": "Jalan-jalan di Kota Tua membuat sejarah terasa lebih hidup karena bukti-buktinya terlihat langsung. Saya suka bagian ini karena nuansanya membuat kota terasa punya lapisan cerita.",
-    "did": [
-      "Berjalan mengelilingi area Kota Tua sambil mengamati arsitektur dan suasana ruang publiknya.",
-      "Melihat bagaimana sejarah kota bisa terasa lebih dekat ketika bangunan, jalan, dan aktivitasnya masih bisa dinikmati langsung.",
-      "Menghubungkan pengalaman berjalan dengan gagasan tentang pelestarian dan identitas kota."
-    ],
-    "learned": "Saya belajar bahwa sejarah akan terasa lebih mudah diingat ketika kita melihat jejaknya secara langsung, bukan cuma lewat buku.",
-    "journal": "Refleksi ini menyoroti satu sudut di Kota Tua yang paling membantu membayangkan masa lalu kota Jakarta.",
-    "evidence": "Foto jalan-jalan, bangunan bersejarah, dan dokumentasi aktivitas di area Kota Tua.",
     "tags": [
       "Edutrip",
       "Sejarah",
@@ -646,14 +528,6 @@
       }
     ],
     "overview": "Di Tzu Chi, kegiatan botol plastik membuat saya sadar bahwa peduli lingkungan itu terasa paling nyata saat dilakukan bersama-sama. Menurut saya, bagian ini sederhana tetapi justru membekas.",
-    "did": [
-      "Mengikuti kegiatan memilah atau mengolah botol plastik sebagai bentuk kepedulian lingkungan.",
-      "Melihat bahwa kebiasaan kecil seperti memilah sampah bisa punya dampak kalau dilakukan serius dan konsisten.",
-      "Menyadari bahwa kegiatan sosial dan lingkungan sering terasa lebih kuat justru karena dilakukan bersama-sama."
-    ],
-    "learned": "Saya belajar bahwa kepedulian lingkungan tidak selalu harus dimulai dari hal besar. Kebiasaan kecil yang rutin justru bisa paling realistis untuk dijalankan.",
-    "journal": "Refleksi ini membahas kenapa kegiatan sederhana seperti memilah botol plastik tetap terasa penting.",
-    "evidence": "Foto proses kerja, hasil kegiatan, dan foto bersama setelah kegiatan selesai.",
     "tags": [
       "Edutrip",
       "Lingkungan",
@@ -682,14 +556,6 @@
       }
     ],
     "overview": "SAAJA menjadi salah satu bagian edutrip yang paling terasa manusiawi. Di tempat ini, pengalaman belajar tidak datang dari lomba atau kampus, tetapi dari interaksi langsung dengan anak-anak. Suasananya sederhana, ramai, dan hangat. Dari sini saya merasa bahwa pendidikan bukan hanya soal materi yang disampaikan, tetapi juga soal cara hadir, mendengar, dan membuat orang lain merasa diperhatikan.",
-    "did": [
-      "Mengikuti kegiatan bersama anak-anak di ruang belajar SAAJA dan memperhatikan bagaimana mereka merespons arahan, permainan, serta interaksi dari kakak-kakak pendamping.",
-      "Melihat bahwa mengajar anak-anak membutuhkan bahasa yang lebih sederhana, ekspresi yang jelas, dan kesabaran yang berbeda dibandingkan berbicara dengan teman sebaya.",
-      "Merasakan bahwa kegiatan sosial seperti ini membuat perjalanan edutrip tidak hanya berisi observasi, tetapi juga pengalaman hadir dan terlibat secara langsung."
-    ],
-    "learned": "Saya belajar bahwa empati tidak selalu muncul dari teori. Empati sering tumbuh ketika saya benar-benar melihat, mendengar, dan berusaha menyesuaikan diri dengan orang lain.",
-    "journal": "Refleksi ini menunjukkan bagaimana kegiatan sosial dapat melengkapi pengalaman akademik dan kompetisi, karena di SAAJA saya belajar bahwa pengetahuan juga perlu diimbangi dengan kepedulian.",
-    "evidence": "Foto kegiatan di ruang belajar SAAJA, interaksi dengan anak-anak, dan suasana kelas yang menunjukkan proses pelayanan secara langsung.",
     "tags": [
       "Edutrip",
       "Pelayanan",
@@ -734,14 +600,6 @@
       }
     ],
     "overview": "Bagian transportasi sering terlihat sepele, padahal justru di sinilah ritme perjalanan terasa. Dari bandara, pesawat, bus, sampai MRT, semuanya ikut membentuk suasana sebelum dan sesudah kegiatan utama.",
-    "did": [
-      "Mendokumentasikan perpindahan dari satu kota ke kota lain sebagai bagian dari keseluruhan cerita.",
-      "Menggunakan transportasi bukan hanya untuk berpindah tempat, tetapi juga sebagai momen istirahat, antisipasi, atau refleksi.",
-      "Menunjukkan bahwa perjalanan edukasi selalu punya lapisan logistik yang juga menarik diceritakan."
-    ],
-    "learned": "Saya belajar bahwa cerita perjalanan terasa lebih lengkap kalau bukan cuma hasil akhirnya yang ditunjukkan, tetapi juga proses perpindahannya.",
-    "journal": "Refleksi ini menyoroti satu moda transportasi yang paling membekas dan kenapa suasananya terasa penting dalam keseluruhan perjalanan.",
-    "evidence": "Foto bandara, pesawat, bus, dan MRT sebagai pendukung narasi perpindahan.",
     "tags": [
       "Transportasi",
       "Perjalanan",
@@ -778,14 +636,6 @@
       }
     ],
     "overview": "Hotel dan tempat menginap saya taruh sebagai bagian penting karena justru di sinilah ada jeda, persiapan, dan obrolan santai yang tidak muncul di ruang lomba atau kelas.",
-    "did": [
-      "Beristirahat, menyiapkan diri, dan menyimpan ritme harian selama kegiatan berlangsung.",
-      "Melihat bahwa ruang istirahat juga punya pengaruh terhadap suasana hati dan kesiapan selama program.",
-      "Menggunakan dokumentasi hotel untuk menunjukkan sisi keseharian di luar agenda utama."
-    ],
-    "learned": "Saya belajar bahwa tempat istirahat yang nyaman bisa punya dampak besar terhadap energi dan fokus selama kegiatan.",
-    "journal": "Refleksi ini membahas kenapa bagian akomodasi sering terlihat sepele, padahal sebenarnya penting dalam perjalanan yang padat.",
-    "evidence": "Foto hotel, lobby, area luar, dan suasana tempat menginap selama program.",
     "tags": [
       "Akomodasi",
       "Hotel",
@@ -826,14 +676,6 @@
       }
     ],
     "overview": "Foto makanan dan coffee break mungkin kecil, tetapi justru bagian seperti ini yang membuat cerita terasa manusiawi. Di sela lomba, pelatnas, atau perjalanan, makan bersama sering jadi momen paling santai untuk bernapas sebentar.",
-    "did": [
-      "Mendokumentasikan makan bersama, coffee break, dan momen jeda kecil di tengah kegiatan.",
-      "Menggunakan foto makanan untuk memperlihatkan ritme harian yang tidak selalu terlihat dari foto tempat utama.",
-      "Melihat bahwa kebersamaan sering tumbuh justru di sela-sela waktu makan."
-    ],
-    "learned": "Saya belajar bahwa jeda yang sederhana bisa sangat penting untuk menjaga energi dan suasana hati.",
-    "journal": "Refleksi ini menunjukkan kenapa momen makan bersama bisa terasa penting, bahkan ketika fokus utama perjalanan adalah belajar atau kompetisi.",
-    "evidence": "Foto makan bersama, coffee break, dan beberapa dokumentasi keseharian selama kegiatan.",
     "tags": [
       "Makan",
       "Keseharian",
@@ -854,14 +696,6 @@
       }
     ],
     "overview": "Bagian dokumen hadir supaya keseluruhan perjalanan punya konteks yang jelas. ID card mungkin terlihat kecil, tetapi menurut saya penting karena menunjukkan bahwa kegiatan ini memang bagian dari program yang terorganisir.",
-    "did": [
-      "Menggunakan ID card sebagai identitas peserta selama program.",
-      "Menyimpan dokumentasi yang menunjukkan konteks kegiatan secara resmi.",
-      "Menghubungkan foto-foto destinasi dengan bukti bahwa semuanya merupakan bagian dari rangkaian kegiatan nyata."
-    ],
-    "learned": "Saya belajar bahwa dokumen kecil bisa memberi kredibilitas yang besar pada sebuah cerita perjalanan.",
-    "journal": "Refleksi ini menjelaskan kenapa ID card atau dokumen resmi membuat jurnal perjalanan terasa lebih kredibel.",
-    "evidence": "Foto ID card dan dokumen pendukung sebagai bukti kegiatan.",
     "tags": [
       "Dokumen",
       "ID Card",
@@ -984,16 +818,6 @@
     if (greeting) greeting.textContent = `Halo, ${displayName}`;
   }
 
-  function renderList(items) {
-    if (!modalDid) return;
-    modalDid.innerHTML = "";
-    items.forEach((item) => {
-      const li = document.createElement("li");
-      li.textContent = item;
-      modalDid.append(li);
-    });
-  }
-
   function renderMedia(detail) {
     const items = detail.media || detail.images || [];
     if (!modalMedia) return;
@@ -1036,21 +860,6 @@
     });
   }
 
-  function renderLinks(detail) {
-    if (!modalLinks) return;
-    const links = detail.links || [];
-    modalLinks.innerHTML = "";
-    modalLinks.hidden = links.length === 0;
-    links.forEach((link) => {
-      const anchor = document.createElement("a");
-      anchor.href = link.url;
-      anchor.target = "_blank";
-      anchor.rel = "noreferrer noopener";
-      anchor.textContent = link.label;
-      modalLinks.append(anchor);
-    });
-  }
-
   function openDestination(placeKey) {
     const detail = destinationDetails[placeKey];
     if (!detail || !modal) return;
@@ -1062,12 +871,7 @@
     modalDuration.textContent = detail.duration;
     modalFocus.textContent = detail.focus;
     modalOverview.textContent = detail.overview;
-    modalLearned.textContent = detail.learned;
-    modalJournal.textContent = detail.journal;
-    modalEvidence.textContent = detail.evidence;
-    renderList(detail.did || []);
     renderMedia(detail);
-    renderLinks(detail);
 
     modal.hidden = false;
     modal.classList.add("is-open");
